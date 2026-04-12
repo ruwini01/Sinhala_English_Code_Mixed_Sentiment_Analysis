@@ -1,0 +1,1 @@
+# Tag each token as [SI]/[EN]/[EM]/[NUM]. Compute CMI index

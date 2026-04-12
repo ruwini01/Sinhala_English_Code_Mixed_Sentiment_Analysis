@@ -1,0 +1,1 @@
+# Map informal spellings: 'hariiima'→'harima' dictionary

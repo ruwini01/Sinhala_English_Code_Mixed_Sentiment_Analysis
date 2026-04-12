@@ -1,0 +1,1 @@
+# Unicode NFC, URL removal, repeated chars, emoji, Sinhala norm

@@ -1,0 +1,1 @@
+# End-to-end: collect → preprocess → train → evaluate
