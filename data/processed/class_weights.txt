@@ -1,0 +1,5 @@
+# class_weights for CrossEntropyLoss
+# 0=positive  1=negative  2=neutral
+0 (positive): 0.923
+1 (negative): 1.1192
+2 (neutral): 0.9775
