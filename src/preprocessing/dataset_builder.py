@@ -25,37 +25,45 @@ from src.preprocessing.lid_tagger import tag_and_enrich
 
 LABEL_MAP = {"positive": 0, "negative": 1, "neutral": 2}
 VALID_SENTIMENTS = set(LABEL_MAP.keys())
-VALID_PLATFORMS = {"youtube", "facebook"}
 
 
 def load_raw(path: str) -> pd.DataFrame:
-    df = pd.read_csv(path, encoding="utf-8-sig")
+    # This file has a TWO-ROW header: row 0 = group labels ("Core Fields"...),
+    # row 1 = the real column names. header=1 tells pandas to use row 1.
+    df = pd.read_csv(path, encoding="utf-8-sig", header=1)
     # drop unnamed columns
     df = df.loc[:, ~df.columns.str.startswith("Unnamed")]
     # normalise column names
-    df.columns = [c.strip().lower() for c in df.columns]
-    # drop header-repeated rows (where sentiment == 'sentiment' or 'label')
-    df = df[df["sentiment"].str.lower().isin(VALID_SENTIMENTS)]
-    df = df[df["platform"].str.lower().isin(VALID_PLATFORMS)]
+    df.columns = [str(c).strip().lower() for c in df.columns]
+    # rename the rich-schema columns to the names the pipeline expects
+    df = df.rename(columns={
+        "sentiment_label": "sentiment",
+        "source_platform": "platform",
+        "source_url": "source",
+    })
+    # keep only rows with a real sentiment label.
+    # this also drops junk/header-repeated rows (mixed, label, sentiment, NaN...)
+    df = df[df["sentiment"].astype(str).str.lower().str.strip().isin(VALID_SENTIMENTS)]
     # normalise
     df["sentiment"] = df["sentiment"].str.lower().str.strip()
-    df["platform"] = df["platform"].str.lower().str.strip()
+    df["platform"] = df["platform"].astype(str).str.lower().str.strip()
+    # NOTE: no platform whitelist — keep youtube, facebook, tiktok, google_play.
     # drop rows with missing text
     df = df.dropna(subset=["text"])
-    df = df[df["text"].str.strip() != ""]
+    df = df[df["text"].astype(str).str.strip() != ""]
     df = df.reset_index(drop=True)
     return df
 
 
 def run_preprocessing(df: pd.DataFrame, demojize: bool = False) -> pd.DataFrame:
-    print(f"  Cleaning {len(df)} texts …")
+    print(f"  Cleaning {len(df)} texts ...")
     df["cleaned_text"] = df["text"].apply(lambda t: clean_text(t, demojize=demojize))
 
     # drop anything that became empty after cleaning
     df = df[df["cleaned_text"].str.strip() != ""].reset_index(drop=True)
     print(f"  After cleaning: {len(df)} rows remain")
 
-    print("  Running LID tagging …")
+    print("  Running LID tagging ...")
     lid_results = df["cleaned_text"].apply(tag_and_enrich)
     lid_df = pd.json_normalize(lid_results)
 
@@ -111,26 +119,26 @@ def save_splits(train_df, val_df, test_df, outdir: str, weights: dict):
         for cls, w in weights.items():
             label_name = {v: k for k, v in LABEL_MAP.items()}[cls]
             f.write(f"{cls} ({label_name}): {w}\n")
-    print(f"  Saved class_weights.txt → {weights}")
+    print(f"  Saved class_weights.txt -> {weights}")
 
 
 def build_dataset(input_path: str, outdir: str, demojize: bool = False):
-    print("\n[1/4] Loading raw data …")
+    print("\n[1/4] Loading raw data ...")
     df = load_raw(input_path)
     print(f"  Loaded {len(df)} clean rows | sentiment dist:\n{df['sentiment'].value_counts().to_dict()}")
 
-    print("\n[2/4] Preprocessing …")
+    print("\n[2/4] Preprocessing ...")
     df = run_preprocessing(df, demojize=demojize)
 
-    print("\n[3/4] Splitting (70/15/15) …")
+    print("\n[3/4] Splitting (70/15/15) ...")
     train_df, val_df, test_df = split_dataset(df)
     print(f"  Train: {len(train_df)}  Val: {len(val_df)}  Test: {len(test_df)}")
 
-    print("\n[4/4] Computing class weights …")
+    print("\n[4/4] Computing class weights ...")
     weights = compute_weights(train_df)
     print(f"  Weights: {weights}")
 
-    print("\nSaving splits …")
+    print("\nSaving splits ...")
     save_splits(train_df, val_df, test_df, outdir, weights)
     print("\nDone.")
     return train_df, val_df, test_df, weights

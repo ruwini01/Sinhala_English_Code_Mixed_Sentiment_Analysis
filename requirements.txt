@@ -1,1 +1,23 @@
 # All pip packages with pinned versions
+#
+# Core data + B1 baseline (runs on CPU locally — versions match the dev machine)
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+joblib==1.5.3
+
+# Neural baselines (B2 BiLSTM, B3 mBERT, B4 XLM-R) and the proposed model.
+# Install these in Colab (GPU). Left unpinned so Colab's CUDA build is used.
+torch
+transformers
+peft            # LoRA adapters for the proposed model
+accelerate
+gensim          # load fastText cc.si.300 vectors for the B2 BiLSTM
+
+# Explainability (Phase 3)
+shap
+lime
+
+# Demo app (Phase 3)
+streamlit
