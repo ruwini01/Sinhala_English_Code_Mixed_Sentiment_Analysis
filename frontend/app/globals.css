@@ -1,0 +1,73 @@
+:root {
+  /* ---- Orange theme palette ---- */
+  --orange-600: #e8590c;
+  --orange-500: #f4731a;
+  --orange-400: #ff8c42;
+  --orange-100: #ffe8d9;
+  --orange-50: #fff4ec;
+
+  --ink-900: #2b1d14;   /* warm near-black for text */
+  --ink-600: #6b5444;
+  --ink-400: #9a8576;
+
+  --paper: #fffaf5;     /* warm off-white background */
+  --card: #ffffff;
+  --line: #f1e3d6;
+
+  --pos: #2f9e44;
+  --pos-bg: #e9f9ee;
+  --neg: #d6336c;
+  --neg-bg: #ffeef4;
+  --neu: #f08c00;
+  --neu-bg: #fff6e6;
+
+  --font-ui: "Poppins", system-ui, sans-serif;
+  --font-si: "Noto Sans Sinhala", "Poppins", sans-serif;
+
+  --radius: 18px;
+  --shadow: 0 1px 2px rgba(43, 29, 20, 0.04),
+    0 8px 30px rgba(232, 89, 12, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink-900);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.55;
+}
+
+/* Sinhala script renders with Noto Sans Sinhala while keeping Poppins for Latin.
+   Apply .si on any element that may contain Sinhala characters. */
+.si {
+  font-family: var(--font-si);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+textarea {
+  font-family: var(--font-si); /* allow Sinhala typing in the input */
+}
+
+::selection {
+  background: var(--orange-100);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
