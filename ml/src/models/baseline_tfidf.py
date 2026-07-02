@@ -33,8 +33,8 @@ from src.models.common import (
     load_split,
     save_metrics,
 )
-from src.utils.logger import get_logger
-from src.utils.seed import set_seed
+from src.common.logger import get_logger
+from src.common.seed import set_seed
 
 log = get_logger("baseline_tfidf")
 
