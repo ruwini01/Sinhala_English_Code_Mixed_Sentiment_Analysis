@@ -13,7 +13,7 @@ Steps (in order):
 import re
 import unicodedata
 
-from src.preprocessing.sinhala_normalizer import normalize_sinhala
+from src.preprocess.sinhala_normalizer import normalize_sinhala
 
 try:
     import emoji as emoji_lib
