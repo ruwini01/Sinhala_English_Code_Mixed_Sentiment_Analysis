@@ -8,7 +8,7 @@ code produce the same numbers — which is what makes your results
 defensible in a viva ("I can reproduce this exactly").
 
 Usage:
-    from src.utils.seed import set_seed
+    from src.common.seed import set_seed
     set_seed(42)
 """
 
