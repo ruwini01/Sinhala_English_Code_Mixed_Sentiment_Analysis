@@ -6,7 +6,7 @@ runs the full preprocessing pipeline, splits into train/val/test,
 and computes class weights for imbalanced training.
 
 Usage:
-    python -m src.preprocessing.dataset_builder \
+    python -m src.preprocess.dataset_builder \
         --input  "path/to/singlish_mixed_sentiment_labeled.csv" \
         --outdir "data/processed"
 """
@@ -20,8 +20,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.utils.class_weight import compute_class_weight
 
-from src.preprocessing.cleaner import clean_text
-from src.preprocessing.lid_tagger import tag_and_enrich
+from src.preprocess.cleaner import clean_text
+from src.preprocess.lid_tagger import tag_and_enrich
 
 LABEL_MAP = {"positive": 0, "negative": 1, "neutral": 2}
 VALID_SENTIMENTS = set(LABEL_MAP.keys())
