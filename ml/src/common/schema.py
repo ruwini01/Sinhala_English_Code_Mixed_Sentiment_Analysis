@@ -21,7 +21,9 @@ RESULTS_DIR = ML_ROOT / "results"
 DATA_MD = ML_ROOT / "DATA.md"
 
 # ---------------------------------------------------------------------------
-# Raw schema (13 columns, exact order)
+# Raw schema (11 columns, exact order — verified against the actual export;
+# the research plan's 13-column description was outdated: this file has no
+# sentiment_fine / label_source columns and names the clean column clean_text)
 # ---------------------------------------------------------------------------
 RAW_COLUMNS = [
     "id",
@@ -30,23 +32,22 @@ RAW_COLUMNS = [
     "source_platform",
     "source_url",
     "language_type",
-    "text_clean",
+    "clean_text",
     "text_length",
     "domain",
     "content_type",
     "emotion",
-    "sentiment_fine",
-    "label_source",
 ]
 
 # Model inputs / target
-TEXT_COL = "text_clean"
+TEXT_COL = "clean_text"
 LID_COL = "language_type"
 LABEL_COL = "sentiment_label"
 ID_COL = "id"
+PLATFORM_COL = "source_platform"
 
 # Descriptive only — dataset-statistics tables, NEVER model inputs
-DESCRIPTIVE_COLS = ["domain", "content_type", "emotion", "sentiment_fine"]
+DESCRIPTIVE_COLS = ["domain", "content_type", "emotion"]
 
 # ---------------------------------------------------------------------------
 # Labels
@@ -56,16 +57,22 @@ ID2LABEL = {v: k for k, v in LABEL2ID.items()}
 NUM_CLASSES = 3
 
 # Rows whose sentiment_label is missing or not in LABEL2ID are quarantined,
-# never remapped (known: ~16 missing, ~30 non-standard e.g. mixed/humorous).
+# never remapped (verified in raw: 16 missing, 14 non-standard e.g.
+# mixed/label/humorous/neutral-negative).
 VALID_LABELS = set(LABEL2ID)
 
-# Provenance values allowed in label_source
+# Provenance values allowed in label_source (column ADDED by pipeline steps;
+# not present in the raw file)
 LABEL_SOURCES = {"manual", "auto", "deterministic"}
 
 # ---------------------------------------------------------------------------
 # Language ID tags (per-token, produced by src/preprocess/language_id.py)
 # ---------------------------------------------------------------------------
-LID_TAGS = {"sin": 0, "eng": 1, "mixed": 2, "unknown": 3}
+# ---------------------------------------------------------------------------
+# Per-token language tag ids (produced by src/preprocess/tokenize_cache.py;
+# consumed by the LID embedding layer). "special" covers <s>, </s>, <pad>.
+# ---------------------------------------------------------------------------
+LID_TAGS = {"sin": 0, "eng": 1, "other": 2, "special": 3}
 
 # ---------------------------------------------------------------------------
 # Reproducibility
