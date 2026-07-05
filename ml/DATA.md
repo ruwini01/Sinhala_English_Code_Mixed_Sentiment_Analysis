@@ -45,4 +45,6 @@ authoritative record of origin and is preserved byte-exact.
 
 ## Derived artifacts
 
-(entries appended by each pipeline step, newest last)
+- note:     old/new agreement 19.6% is computed on raw strings; the previous
+            column used a different taxonomy (singlish/code-mixed), see thesis §3.x
+
