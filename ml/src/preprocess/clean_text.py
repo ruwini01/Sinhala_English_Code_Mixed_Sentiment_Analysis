@@ -78,7 +78,7 @@ def main():
     df["text_length"] = df[TEXT_COL].str.len()
 
     n_empty = int((df[TEXT_COL] == "").sum())
-    df.to_csv(OUT_CSV, index=False, encoding="utf-8")
+    df.to_csv(OUT_CSV, index=False, encoding="utf-8", lineterminator="\n")
 
     print(f"rows:              {len(df)}  -> {OUT_CSV}")
     print(f"empty clean_text:  {n_empty} (kept, not dropped — review if > 0)")

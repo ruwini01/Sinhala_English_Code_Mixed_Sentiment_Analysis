@@ -76,8 +76,8 @@ def main():
         )
 
     INTERIM_DIR.mkdir(parents=True, exist_ok=True)
-    clean.to_csv(CLEAN_CSV, index=False, encoding="utf-8")
-    quarantine.to_csv(QUARANTINE_CSV, index=False, encoding="utf-8")
+    clean.to_csv(CLEAN_CSV, index=False, encoding="utf-8", lineterminator="\n")
+    quarantine.to_csv(QUARANTINE_CSV, index=False, encoding="utf-8", lineterminator="\n")
 
     print(f"raw:        {n_raw}")
     print(f"clean:      {len(clean)}  -> {CLEAN_CSV}")

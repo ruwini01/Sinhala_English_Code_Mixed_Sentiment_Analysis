@@ -108,7 +108,7 @@ def main():
     df["label_source"] = "deterministic"
 
     agree = int((old == df[LID_COL]).sum())
-    df.to_csv(OUT_CSV, index=False, encoding="utf-8")
+    df.to_csv(OUT_CSV, index=False, encoding="utf-8", lineterminator="\n")
 
     print(f"rows: {len(df)}  -> {OUT_CSV}")
     print("\nnew language_type distribution:")
