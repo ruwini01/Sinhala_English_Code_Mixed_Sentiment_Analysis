@@ -1,0 +1,1 @@
+#  B2: fastText(300d) → BiLSTM(256,2) → Linear(3)

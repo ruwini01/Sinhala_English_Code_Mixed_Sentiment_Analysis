@@ -1,1 +1,0 @@
-# B3: bert-base-multilingual-cased, full fine-tune

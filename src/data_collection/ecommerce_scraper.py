@@ -1,1 +1,0 @@
-# Daraz.lk scraper + manual template. Star→sentiment mapping

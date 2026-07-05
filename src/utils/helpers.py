@@ -1,1 +1,0 @@
-# File I/O, timer, device detection, misc utilities

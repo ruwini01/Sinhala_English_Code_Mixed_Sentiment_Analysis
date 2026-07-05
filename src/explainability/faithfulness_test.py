@@ -1,1 +1,0 @@
-# Mask top-5 SHAP tokens → measure accuracy drop

@@ -1,1 +1,0 @@
-# P1: XLM-R + LoRA(r=8) + LID embed + SCL loss ⭐ MAIN MODEL

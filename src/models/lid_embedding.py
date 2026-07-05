@@ -1,1 +1,0 @@
-# LID embedding layer: maps [SI]=0,[EN]=1 → 32-dim vector

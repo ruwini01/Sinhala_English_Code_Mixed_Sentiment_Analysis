@@ -1,0 +1,1 @@
+# Creates CSV template for manual FB comment collection

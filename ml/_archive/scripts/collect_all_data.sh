@@ -1,0 +1,1 @@
+# Run all 4 collectors in sequence
