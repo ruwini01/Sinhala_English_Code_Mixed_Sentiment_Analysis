@@ -68,7 +68,11 @@ LABEL_SOURCES = {"manual", "auto", "deterministic"}
 # ---------------------------------------------------------------------------
 # Language ID tags (per-token, produced by src/preprocess/language_id.py)
 # ---------------------------------------------------------------------------
-LID_TAGS = {"sin": 0, "eng": 1, "mixed": 2, "unknown": 3}
+# ---------------------------------------------------------------------------
+# Per-token language tag ids (produced by src/preprocess/tokenize_cache.py;
+# consumed by the LID embedding layer). "special" covers <s>, </s>, <pad>.
+# ---------------------------------------------------------------------------
+LID_TAGS = {"sin": 0, "eng": 1, "other": 2, "special": 3}
 
 # ---------------------------------------------------------------------------
 # Reproducibility
