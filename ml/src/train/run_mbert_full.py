@@ -11,4 +11,5 @@ if __name__ == "__main__":
         experiment_id="mbert_full",
         model_name="bert-base-multilingual-cased",
         notes="B3 backbone comparison; full fine-tune, weighted CE",
+        hp_overrides={"epochs": 8, "patience": 3, "lr": 3e-5},
     )

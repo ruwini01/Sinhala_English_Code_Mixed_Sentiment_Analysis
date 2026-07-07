@@ -14,4 +14,5 @@ if __name__ == "__main__":
         experiment_id="xlmr_full",
         model_name="xlm-roberta-base",
         notes="B4 full fine-tune; LoRA efficiency comparison target (claim 1)",
+        hp_overrides={"epochs": 8, "patience": 3, "lr": 3e-5},
     )
