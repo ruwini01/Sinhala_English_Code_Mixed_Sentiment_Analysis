@@ -44,12 +44,11 @@ authoritative record of origin and is preserved byte-exact.
 ---
 
 ## Derived artifacts
-
+## 1
 - note:     old/new agreement 19.6% is computed on raw strings; the previous
             column used a different taxonomy (singlish/code-mixed), see thesis §3.x
 
-## Derived artifacts
-
+## 2
 ## data/interim/clean.csv + data/interim/quarantine.csv
 - source:   data/raw/singlish_mixed_sentiment_complete.csv (sha256: 0b513cff6676969b...)
 - script:   src/preprocess/quarantine.py @ git commit d3c7811
