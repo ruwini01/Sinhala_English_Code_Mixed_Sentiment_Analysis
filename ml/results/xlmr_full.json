@@ -1,0 +1,112 @@
+{
+  "experiment_id": "xlmr_full",
+  "git_commit": "2a64f51",
+  "date": "2026-07-07T04:24:15",
+  "seed": 42,
+  "trainable_params": 278045955,
+  "wall_clock_sec": 833.9,
+  "hyperparams": {
+    "max_len": 128,
+    "batch_size": 16,
+    "lr": 3e-05,
+    "epochs": 8,
+    "patience": 3,
+    "warmup_frac": 0.1,
+    "weight_decay": 0.01,
+    "model_name": "xlm-roberta-base",
+    "device": "cuda"
+  },
+  "val": {
+    "macro_f1": 0.7081713722796125,
+    "accuracy": 0.7151015228426396,
+    "per_class": {
+      "negative": {
+        "precision": 0.7140151515151515,
+        "recall": 0.736328125,
+        "f1": 0.725,
+        "support": 512
+      },
+      "neutral": {
+        "precision": 0.6454545454545455,
+        "recall": 0.5668662674650699,
+        "f1": 0.6036131774707758,
+        "support": 501
+      },
+      "positive": {
+        "precision": 0.7664473684210527,
+        "recall": 0.827708703374778,
+        "f1": 0.7959009393680615,
+        "support": 563
+      }
+    },
+    "confusion_matrix": [
+      [
+        377,
+        93,
+        42
+      ],
+      [
+        117,
+        284,
+        100
+      ],
+      [
+        34,
+        63,
+        466
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "test": {
+    "macro_f1": 0.6840356243109782,
+    "accuracy": 0.689283449587825,
+    "per_class": {
+      "negative": {
+        "precision": 0.6736641221374046,
+        "recall": 0.689453125,
+        "f1": 0.6814671814671814,
+        "support": 512
+      },
+      "neutral": {
+        "precision": 0.6106382978723405,
+        "recall": 0.5717131474103586,
+        "f1": 0.5905349794238683,
+        "support": 502
+      },
+      "positive": {
+        "precision": 0.7667238421955404,
+        "recall": 0.7939609236234458,
+        "f1": 0.7801047120418848,
+        "support": 563
+      }
+    },
+    "confusion_matrix": [
+      [
+        353,
+        112,
+        47
+      ],
+      [
+        126,
+        287,
+        89
+      ],
+      [
+        45,
+        71,
+        447
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "notes": "B4 full fine-tune; LoRA efficiency comparison target (claim 1)"
+}

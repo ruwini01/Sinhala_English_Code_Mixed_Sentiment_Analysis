@@ -1,0 +1,116 @@
+{
+  "experiment_id": "tfidf_lr",
+  "git_commit": "10751d9",
+  "date": "2026-07-06T00:25:25",
+  "seed": 42,
+  "trainable_params": 450003,
+  "wall_clock_sec": 5.0,
+  "hyperparams": {
+    "word_ngrams": [
+      1,
+      2
+    ],
+    "word_max_features": 50000,
+    "char_ngrams": [
+      2,
+      5
+    ],
+    "char_max_features": 100000,
+    "C": 1.0,
+    "class_weight": "balanced",
+    "max_iter": 2000
+  },
+  "val": {
+    "macro_f1": 0.7087073969613055,
+    "accuracy": 0.7119289340101523,
+    "per_class": {
+      "negative": {
+        "precision": 0.7057728119180633,
+        "recall": 0.740234375,
+        "f1": 0.7225929456625357,
+        "support": 512
+      },
+      "neutral": {
+        "precision": 0.6244897959183674,
+        "recall": 0.6107784431137725,
+        "f1": 0.6175580221997982,
+        "support": 501
+      },
+      "positive": {
+        "precision": 0.7959927140255009,
+        "recall": 0.7761989342806395,
+        "f1": 0.7859712230215827,
+        "support": 563
+      }
+    },
+    "confusion_matrix": [
+      [
+        379,
+        100,
+        33
+      ],
+      [
+        116,
+        306,
+        79
+      ],
+      [
+        42,
+        84,
+        437
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "test": {
+    "macro_f1": 0.692682650494039,
+    "accuracy": 0.6956246036778694,
+    "per_class": {
+      "negative": {
+        "precision": 0.6740331491712708,
+        "recall": 0.71484375,
+        "f1": 0.6938388625592417,
+        "support": 512
+      },
+      "neutral": {
+        "precision": 0.6125760649087221,
+        "recall": 0.601593625498008,
+        "f1": 0.607035175879397,
+        "support": 502
+      },
+      "positive": {
+        "precision": 0.7929759704251387,
+        "recall": 0.7619893428063943,
+        "f1": 0.7771739130434783,
+        "support": 563
+      }
+    },
+    "confusion_matrix": [
+      [
+        366,
+        110,
+        36
+      ],
+      [
+        124,
+        302,
+        76
+      ],
+      [
+        53,
+        81,
+        429
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "notes": "B1 classical floor; word+char TF-IDF, class-weighted LR"
+}

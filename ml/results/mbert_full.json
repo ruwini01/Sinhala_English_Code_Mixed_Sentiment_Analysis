@@ -1,0 +1,112 @@
+{
+  "experiment_id": "mbert_full",
+  "git_commit": "4970254",
+  "date": "2026-07-07T03:28:30",
+  "seed": 42,
+  "trainable_params": 177855747,
+  "wall_clock_sec": 368.1,
+  "hyperparams": {
+    "max_len": 128,
+    "batch_size": 16,
+    "lr": 2e-05,
+    "epochs": 4,
+    "patience": 2,
+    "warmup_frac": 0.1,
+    "weight_decay": 0.01,
+    "model_name": "bert-base-multilingual-cased",
+    "device": "cuda"
+  },
+  "val": {
+    "macro_f1": 0.6750851562870656,
+    "accuracy": 0.6776649746192893,
+    "per_class": {
+      "negative": {
+        "precision": 0.6323777403035413,
+        "recall": 0.732421875,
+        "f1": 0.6787330316742082,
+        "support": 512
+      },
+      "neutral": {
+        "precision": 0.6341991341991342,
+        "recall": 0.5848303393213573,
+        "f1": 0.608515057113188,
+        "support": 501
+      },
+      "positive": {
+        "precision": 0.7677543186180422,
+        "recall": 0.7104795737122558,
+        "f1": 0.7380073800738007,
+        "support": 563
+      }
+    },
+    "confusion_matrix": [
+      [
+        375,
+        89,
+        48
+      ],
+      [
+        135,
+        293,
+        73
+      ],
+      [
+        83,
+        80,
+        400
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "test": {
+    "macro_f1": 0.6474875244575874,
+    "accuracy": 0.6499682942295498,
+    "per_class": {
+      "negative": {
+        "precision": 0.6003344481605352,
+        "recall": 0.701171875,
+        "f1": 0.6468468468468469,
+        "support": 512
+      },
+      "neutral": {
+        "precision": 0.5906183368869936,
+        "recall": 0.5517928286852589,
+        "f1": 0.5705458290422245,
+        "support": 502
+      },
+      "positive": {
+        "precision": 0.7627450980392156,
+        "recall": 0.6909413854351687,
+        "f1": 0.7250698974836906,
+        "support": 563
+      }
+    },
+    "confusion_matrix": [
+      [
+        359,
+        105,
+        48
+      ],
+      [
+        152,
+        277,
+        73
+      ],
+      [
+        87,
+        87,
+        389
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "notes": "B3 backbone comparison; full fine-tune, weighted CE"
+}

@@ -2,7 +2,7 @@
 
 Holds the single merged raw dataset:
 
-- `singlish_mixed_sentiment_complete.csv` (~10,409 rows, 13 columns)
+- `singlish_mixed_sentiment_complete.csv` (10,539 rows, 11 columns)
 
 This file is **immutable**: no script may write to this directory. It is
 gitignored (kept local until the dataset is cleared for publication); its
