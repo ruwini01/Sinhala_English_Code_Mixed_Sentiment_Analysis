@@ -1,0 +1,122 @@
+{
+  "experiment_id": "lora_scl_lid",
+  "git_commit": "c494774",
+  "date": "2026-07-13T16:00:27",
+  "seed": 42,
+  "trainable_params": 398723,
+  "wall_clock_sec": 1786.6,
+  "hyperparams": {
+    "id": "lora_scl_lid",
+    "lam": 0.1,
+    "no_lid": false,
+    "no_lora": false,
+    "rank": 8,
+    "alpha": 16,
+    "targets": [
+      "query",
+      "value"
+    ],
+    "lr": 0.0002,
+    "batch_size": 32,
+    "epochs": 18,
+    "patience": 4,
+    "temperature": 0.07,
+    "seed": 42,
+    "device": "cuda",
+    "base_model": "xlm-roberta-base",
+    "max_len": 128
+  },
+  "val": {
+    "macro_f1": 0.6934416783499687,
+    "accuracy": 0.6954314720812182,
+    "per_class": {
+      "negative": {
+        "precision": 0.7065868263473054,
+        "recall": 0.69140625,
+        "f1": 0.6989141164856861,
+        "support": 512
+      },
+      "neutral": {
+        "precision": 0.5886792452830188,
+        "recall": 0.6227544910179641,
+        "f1": 0.6052376333656644,
+        "support": 501
+      },
+      "positive": {
+        "precision": 0.7889908256880734,
+        "recall": 0.7637655417406749,
+        "f1": 0.776173285198556,
+        "support": 563
+      }
+    },
+    "confusion_matrix": [
+      [
+        354,
+        128,
+        30
+      ],
+      [
+        104,
+        312,
+        85
+      ],
+      [
+        43,
+        90,
+        430
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "test": {
+    "macro_f1": 0.6710706337027487,
+    "accuracy": 0.6740646797717185,
+    "per_class": {
+      "negative": {
+        "precision": 0.6502057613168725,
+        "recall": 0.6171875,
+        "f1": 0.6332665330661322,
+        "support": 512
+      },
+      "neutral": {
+        "precision": 0.5767097966728281,
+        "recall": 0.6215139442231076,
+        "f1": 0.5982742090124641,
+        "support": 502
+      },
+      "positive": {
+        "precision": 0.7909090909090909,
+        "recall": 0.7726465364120781,
+        "f1": 0.7816711590296496,
+        "support": 563
+      }
+    },
+    "confusion_matrix": [
+      [
+        316,
+        156,
+        40
+      ],
+      [
+        115,
+        312,
+        75
+      ],
+      [
+        55,
+        73,
+        435
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "notes": "P1 proposed: XLM-R frozen + LoRA + SCL + LID (claims 1+3)"
+}
