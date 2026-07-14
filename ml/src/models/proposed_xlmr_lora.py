@@ -26,9 +26,9 @@ MODEL_NAME = "xlm-roberta-base"
 class ProposedModel(nn.Module):
     def __init__(self, use_lora=True, use_lid=True, lora_r=8, lora_alpha=16,
                  lora_dropout=0.05, target_modules=("query", "value"),
-                 proj_dim=128, head_dropout=0.1):
+                 proj_dim=128, head_dropout=0.1, model_name=MODEL_NAME):
         super().__init__()
-        encoder = AutoModel.from_pretrained(MODEL_NAME)
+        encoder = AutoModel.from_pretrained(model_name)
         hidden = encoder.config.hidden_size
 
         if use_lora:
