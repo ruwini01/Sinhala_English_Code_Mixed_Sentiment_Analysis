@@ -53,7 +53,7 @@ def evaluate(y_true, y_pred):
 
 
 def save_results(experiment_id, val_metrics, test_metrics, trainable_params,
-                 wall_clock_sec, hyperparams, notes=""):
+                 wall_clock_sec, hyperparams, notes="", history=None, extra=None):
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
     out = {
         "experiment_id": experiment_id,
@@ -67,6 +67,10 @@ def save_results(experiment_id, val_metrics, test_metrics, trainable_params,
         "test": test_metrics,
         "notes": notes,
     }
+    if history is not None:
+        out["history"] = history   # per-epoch curves: train_loss, val_loss, val_macro_f1
+    if extra is not None:
+        out["extra"] = extra       # e.g. test_loss, binary pos/neg metrics
     path = RESULTS_DIR / f"{experiment_id}.json"
     path.write_text(json.dumps(out, indent=2), encoding="utf-8")
     print(f"\nresults -> {path}")
