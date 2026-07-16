@@ -1,12 +1,13 @@
 {
   "experiment_id": "lora_scl_lid",
-  "git_commit": "c494774",
-  "date": "2026-07-13T16:00:27",
+  "git_commit": "283a3cd",
+  "date": "2026-07-15T05:15:38",
   "seed": 42,
   "trainable_params": 398723,
-  "wall_clock_sec": 1786.6,
+  "wall_clock_sec": 620.2,
   "hyperparams": {
     "id": "lora_scl_lid",
+    "model": "xlm-roberta-base",
     "lam": 0.1,
     "no_lid": false,
     "no_lora": false,
@@ -20,50 +21,50 @@
     "batch_size": 32,
     "epochs": 18,
     "patience": 4,
+    "warmup_frac": 0.1,
     "temperature": 0.07,
     "seed": 42,
     "device": "cuda",
-    "base_model": "xlm-roberta-base",
     "max_len": 128
   },
   "val": {
-    "macro_f1": 0.6934416783499687,
-    "accuracy": 0.6954314720812182,
+    "macro_f1": 0.6962222585988546,
+    "accuracy": 0.7011421319796954,
     "per_class": {
       "negative": {
-        "precision": 0.7065868263473054,
-        "recall": 0.69140625,
-        "f1": 0.6989141164856861,
+        "precision": 0.6820702402957486,
+        "recall": 0.720703125,
+        "f1": 0.7008547008547008,
         "support": 512
       },
       "neutral": {
-        "precision": 0.5886792452830188,
-        "recall": 0.6227544910179641,
-        "f1": 0.6052376333656644,
+        "precision": 0.6298701298701299,
+        "recall": 0.5808383233532934,
+        "f1": 0.6043613707165109,
         "support": 501
       },
       "positive": {
-        "precision": 0.7889908256880734,
-        "recall": 0.7637655417406749,
-        "f1": 0.776173285198556,
+        "precision": 0.7766143106457243,
+        "recall": 0.7904085257548845,
+        "f1": 0.7834507042253521,
         "support": 563
       }
     },
     "confusion_matrix": [
       [
-        354,
-        128,
-        30
+        369,
+        98,
+        45
       ],
       [
-        104,
-        312,
-        85
+        127,
+        291,
+        83
       ],
       [
-        43,
-        90,
-        430
+        45,
+        73,
+        445
       ]
     ],
     "confusion_matrix_labels": [
@@ -73,43 +74,43 @@
     ]
   },
   "test": {
-    "macro_f1": 0.6710706337027487,
-    "accuracy": 0.6740646797717185,
+    "macro_f1": 0.6708067828706549,
+    "accuracy": 0.6753329105897273,
     "per_class": {
       "negative": {
-        "precision": 0.6502057613168725,
-        "recall": 0.6171875,
-        "f1": 0.6332665330661322,
+        "precision": 0.6486486486486487,
+        "recall": 0.65625,
+        "f1": 0.6524271844660194,
         "support": 512
       },
       "neutral": {
-        "precision": 0.5767097966728281,
-        "recall": 0.6215139442231076,
-        "f1": 0.5982742090124641,
+        "precision": 0.5809716599190283,
+        "recall": 0.5717131474103586,
+        "f1": 0.5763052208835341,
         "support": 502
       },
       "positive": {
-        "precision": 0.7909090909090909,
-        "recall": 0.7726465364120781,
-        "f1": 0.7816711590296496,
+        "precision": 0.7823008849557522,
+        "recall": 0.7850799289520426,
+        "f1": 0.7836879432624113,
         "support": 563
       }
     },
     "confusion_matrix": [
       [
-        316,
-        156,
-        40
+        336,
+        135,
+        41
       ],
       [
-        115,
-        312,
-        75
+        133,
+        287,
+        82
       ],
       [
-        55,
-        73,
-        435
+        49,
+        72,
+        442
       ]
     ],
     "confusion_matrix_labels": [
@@ -118,5 +119,58 @@
       "positive"
     ]
   },
-  "notes": "P1 proposed: XLM-R frozen + LoRA + SCL + LID (claims 1+3)"
+  "notes": "P1 proposed: XLM-R frozen + LoRA + SCL + LID (claims 1+3)",
+  "history": {
+    "train_loss": [
+      1.4379,
+      1.3287,
+      1.2134,
+      1.1611,
+      1.1193,
+      1.086,
+      1.0626,
+      1.032,
+      1.0199,
+      1.0009,
+      0.981,
+      0.9742
+    ],
+    "val_loss": [
+      1.0743,
+      0.8891,
+      0.8441,
+      0.7793,
+      0.7631,
+      0.7386,
+      0.7519,
+      0.7178,
+      0.7442,
+      0.7174,
+      0.7271,
+      0.724
+    ],
+    "val_macro_f1": [
+      0.395,
+      0.5699,
+      0.6078,
+      0.6499,
+      0.6723,
+      0.6816,
+      0.6841,
+      0.6962,
+      0.6881,
+      0.6909,
+      0.6945,
+      0.6943
+    ]
+  },
+  "extra": {
+    "test_loss": 0.7395,
+    "binary_pos_neg": {
+      "accuracy": 0.8623255813953489,
+      "macro_f1": 0.8621049493142516,
+      "n_rows": 1075,
+      "note": "neutral rows filtered at evaluation; labels never remapped"
+    }
+  }
 }
