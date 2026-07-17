@@ -114,25 +114,38 @@ def main():
 
     f = P1Wrapper(args.ckpt, args.model, device)
     test = load_split_frames()["test"]
+    # single-word comments break the Text masker's clustering; exclude them
+    multi = test[test["clean_text"].astype(str).str.split().str.len() >= 2]
+    print(f"test rows with >=2 words: {len(multi)} of {len(test)}")
     rng = np.random.default_rng(SEED)
-    sample = test.iloc[rng.choice(len(test), size=args.n, replace=False)]
+    sample = multi.iloc[rng.choice(len(multi), size=min(args.n, len(multi)),
+                                   replace=False)]
     texts = [str(t) for t in sample["clean_text"]]
     y_true = sample["label_id"].tolist()
 
-    # ---- 1. SHAP -----------------------------------------------------------
+    # ---- 1. SHAP (per sample, so one failure cannot lose the batch) --------
     masker = shap.maskers.Text(r"\s")          # whitespace words as units
     explainer = shap.Explainer(f, masker, output_names=[ID2LABEL[i] for i in range(3)])
-    sv = explainer(texts, batch_size=32)
     preds = f(texts).argmax(1).tolist()
 
     records = []
     for i, text in enumerate(texts):
+        try:
+            sv = explainer([text], silent=True)
+        except Exception as e:
+            print(f"  sample {i} skipped ({e})")
+            continue
         cls = preds[i]
-        words = [w.strip() for w in sv.data[i]]
-        attr = sv.values[i][:, cls].tolist()
+        words = [w.strip() for w in sv.data[0]]
+        attr = sv.values[0][:, cls].tolist()
         records.append({"id": str(sample.iloc[i]["id"]), "text": text,
                         "true": ID2LABEL[y_true[i]], "pred": ID2LABEL[cls],
                         "words": words, "attributions": attr})
+        if (i + 1) % 20 == 0:
+            print(f"  SHAP {i + 1}/{len(texts)}")
+    # rebuild aligned label/prediction lists from the surviving records
+    preds = [LABEL2ID[r["pred"]] for r in records]
+    y_true = [LABEL2ID[r["true"]] for r in records]
     (OUT / "shap_values.json").write_text(
         json.dumps(records, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"SHAP done on {len(records)} samples -> {OUT/'shap_values.json'}")
