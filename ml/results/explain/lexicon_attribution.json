@@ -1,0 +1,51 @@
+[
+  {
+    "class": "intensifier",
+    "word": "harima",
+    "occurrences": 6,
+    "mean_abs_attr": 0.22705646650865674,
+    "corpus_mean_abs_attr": 0.09907971762661835
+  },
+  {
+    "class": "intensifier",
+    "word": "godak",
+    "occurrences": 7,
+    "mean_abs_attr": 0.10512912836358217,
+    "corpus_mean_abs_attr": 0.09907971762661835
+  },
+  {
+    "class": "intensifier",
+    "word": "hari",
+    "occurrences": 6,
+    "mean_abs_attr": 0.04410524701233953,
+    "corpus_mean_abs_attr": 0.09907971762661835
+  },
+  {
+    "class": "negation",
+    "word": "ne",
+    "occurrences": 16,
+    "mean_abs_attr": 0.14372232246387284,
+    "corpus_mean_abs_attr": 0.09907971762661835
+  },
+  {
+    "class": "negation",
+    "word": "nehe",
+    "occurrences": 5,
+    "mean_abs_attr": 0.11809874032624065,
+    "corpus_mean_abs_attr": 0.09907971762661835
+  },
+  {
+    "class": "negation",
+    "word": "epa",
+    "occurrences": 5,
+    "mean_abs_attr": 0.16312779273139313,
+    "corpus_mean_abs_attr": 0.09907971762661835
+  },
+  {
+    "class": "negation",
+    "word": "na",
+    "occurrences": 5,
+    "mean_abs_attr": 0.16180858004372567,
+    "corpus_mean_abs_attr": 0.09907971762661835
+  }
+]

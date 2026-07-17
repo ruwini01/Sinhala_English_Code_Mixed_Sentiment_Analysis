@@ -1,0 +1,8 @@
+{
+  "n": 200,
+  "macro_f1_original": 0.6841,
+  "macro_f1_top5_masked": 0.3518,
+  "macro_f1_random5_masked": 0.4464,
+  "drop_top5": 0.3323,
+  "drop_random5": 0.2377
+}
