@@ -1,0 +1,194 @@
+{
+  "experiment_id": "abl_lora_only",
+  "git_commit": "7a6fa70",
+  "date": "2026-07-16T19:21:39",
+  "seed": 42,
+  "trainable_params": 395651,
+  "wall_clock_sec": 957.4,
+  "hyperparams": {
+    "id": "abl_lora_only",
+    "model": "xlm-roberta-base",
+    "lam": 0.0,
+    "no_lid": true,
+    "no_lora": false,
+    "rank": 8,
+    "alpha": 16,
+    "targets": [
+      "query",
+      "value"
+    ],
+    "lr": 0.0002,
+    "batch_size": 32,
+    "epochs": 18,
+    "patience": 4,
+    "warmup_frac": 0.1,
+    "temperature": 0.07,
+    "seed": 42,
+    "device": "cuda",
+    "max_len": 128
+  },
+  "val": {
+    "macro_f1": 0.6970257225531503,
+    "accuracy": 0.7011421319796954,
+    "per_class": {
+      "negative": {
+        "precision": 0.6877256317689531,
+        "recall": 0.744140625,
+        "f1": 0.7148217636022514,
+        "support": 512
+      },
+      "neutral": {
+        "precision": 0.6226012793176973,
+        "recall": 0.5828343313373253,
+        "f1": 0.6020618556701031,
+        "support": 501
+      },
+      "positive": {
+        "precision": 0.7811934900542495,
+        "recall": 0.7673179396092362,
+        "f1": 0.7741935483870968,
+        "support": 563
+      }
+    },
+    "confusion_matrix": [
+      [
+        381,
+        97,
+        34
+      ],
+      [
+        122,
+        292,
+        87
+      ],
+      [
+        51,
+        80,
+        432
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "test": {
+    "macro_f1": 0.6743818719890888,
+    "accuracy": 0.6778693722257451,
+    "per_class": {
+      "negative": {
+        "precision": 0.6518375241779497,
+        "recall": 0.658203125,
+        "f1": 0.6550048590864918,
+        "support": 512
+      },
+      "neutral": {
+        "precision": 0.5795677799607073,
+        "recall": 0.5876494023904383,
+        "f1": 0.5835806132542037,
+        "support": 502
+      },
+      "positive": {
+        "precision": 0.7931034482758621,
+        "recall": 0.7761989342806395,
+        "f1": 0.7845601436265709,
+        "support": 563
+      }
+    },
+    "confusion_matrix": [
+      [
+        337,
+        139,
+        36
+      ],
+      [
+        129,
+        295,
+        78
+      ],
+      [
+        51,
+        75,
+        437
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "negative",
+      "neutral",
+      "positive"
+    ]
+  },
+  "notes": "P1 proposed: XLM-R frozen + LoRA + SCL + LID (claims 1+3)",
+  "history": {
+    "train_loss": [
+      1.1084,
+      1.0021,
+      0.895,
+      0.843,
+      0.8023,
+      0.775,
+      0.7554,
+      0.7255,
+      0.7194,
+      0.6978,
+      0.6884,
+      0.6775,
+      0.6631,
+      0.6604,
+      0.6538,
+      0.6417,
+      0.6408,
+      0.6306
+    ],
+    "val_loss": [
+      1.0852,
+      0.914,
+      0.8757,
+      0.7812,
+      0.7694,
+      0.7596,
+      0.7491,
+      0.738,
+      0.7518,
+      0.7368,
+      0.7374,
+      0.7289,
+      0.7393,
+      0.7325,
+      0.7471,
+      0.7328,
+      0.728,
+      0.7291
+    ],
+    "val_macro_f1": [
+      0.2645,
+      0.5791,
+      0.5794,
+      0.6443,
+      0.6571,
+      0.6658,
+      0.6776,
+      0.6731,
+      0.6882,
+      0.675,
+      0.6909,
+      0.6876,
+      0.694,
+      0.6863,
+      0.6874,
+      0.6946,
+      0.697,
+      0.6918
+    ]
+  },
+  "extra": {
+    "test_loss": 0.7639,
+    "binary_pos_neg": {
+      "accuracy": 0.867906976744186,
+      "macro_f1": 0.8677668052668053,
+      "n_rows": 1075,
+      "note": "neutral rows filtered at evaluation; labels never remapped"
+    }
+  }
+}
