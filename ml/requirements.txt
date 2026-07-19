@@ -7,6 +7,11 @@ scipy==1.17.1
 scikit-learn==1.8.0
 joblib==1.5.3
 
+# Dataset analysis / thesis figures (EDA notebooks, runs on CPU locally)
+matplotlib
+seaborn
+wordcloud
+
 # Neural baselines (B2 BiLSTM, B3 mBERT, B4 XLM-R) and the proposed model.
 # Install these in Colab (GPU). Left unpinned so Colab's CUDA build is used.
 torch
