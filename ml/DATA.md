@@ -18,20 +18,24 @@ Entry format:
 
 ## Raw input
 
-## data/raw/singlish_mixed_sentiment_complete.csv (v2.1 — current, language_type recurated 2026-07-19)
-- source:   updated merged export of all platform collections (see Collection provenance below)
-- sha256:   48ef313fb717411894a195a4bd488b52ce8431728f4c6c5d39643d1f4e097a7e
+## data/raw/singlish_mixed_sentiment_complete.csv (v3 — current, LID-audit corrections applied 2026-07-19)
+- source:   v2.1 export + 639 language_type corrections from the manual review
+            of all 1,075 rows flagged by src/preprocess/audit_language_type.py
+            (decisions logged in results/tables/lid_review_filled.xlsx and
+            lid_corrections.csv; sentiment labels untouched)
+- sha256:   5ca2952ebf1087dbc0704beb4c53306bf3e30ab201ff72a60171565a932ba221
 - rows:     10,160 total; 10,160 3-class-ready; 0 missing label; 0 non-standard label
 - schema:   11 columns — id, text, sentiment_label, source_platform, source_url,
             language_type, clean_text, text_length, domain, content_type, emotion
-- notes:    language_type is HAND-CURATED on a 4-way taxonomy — singlish 6096
-            (fully romanized Sinhala, e.g. "oya wathura biuwada"), code-mixed
-            1679 (Sinhala script + English, e.g. "එයා මාර beautiful"), sinhala
-            1456, english 910 — plus 11 "other" and 8 "unknown" stragglers;
+- notes:    language_type is HAND-CURATED on a 4-way taxonomy, audited and
+            corrected 2026-07-19 — singlish 6071 (fully romanized Sinhala),
+            code-mixed 1896 (Sinhala script + English), sinhala 1266,
+            english 908 — plus 11 "other" and 8 "unknown" stragglers;
+            script-level consistency after correction: 95.7% (6 deliberate
+            keeps remain as HARD flags — transliterated loanwords);
             preserved verbatim as language_type_manual by pipeline step 4,
             which still writes its own deterministic language_type for the
-            reproducibility chain (the two taxonomies differ by design;
-            agreement 20.7%);
+            reproducibility chain (the two taxonomies differ by design);
             clean_text and text_length come PRE-FILLED (unlike v1); pipeline
             step 3 still regenerates both from `text` under the documented
             7-step rule — verified byte-identical output on this file;
@@ -42,12 +46,13 @@ Entry format:
             normalize_platform(), raw never edited
 - verified: 2026-07-19 by src/preprocess/validate_schema.py
 - status:   IMMUTABLE. Never edited. All artifacts derive from it.
-- history:  supersedes the v2.0 export of the same day (10,160 rows, sha256
-            5ed7cc85... — differed only in language_type values and 1-2
-            platform cells; text/labels/ids identical). The v1 raw file
-            (10,539 rows, sha256 0b513cff...) and all v1 derived artifacts
-            are preserved below under "v1 (historical)" and remain
-            reproducible from git history at commit c5731b1^ onward.
+- history:  supersedes v2.1 (sha256 48ef313f..., the pre-audit language_type
+            values) and the v2.0 export of the same day (sha256 5ed7cc85...);
+            text/sentiment/ids identical across v2.0→v3, only language_type
+            (and 1-2 platform cells) changed. The v1 raw file (10,539 rows,
+            sha256 0b513cff...) and all v1 derived artifacts are preserved
+            below under "v1 (historical)" and remain reproducible from git
+            history at commit c5731b1^ onward.
 
 ### Collection provenance (thesis §3.2, verbatim)
 - YouTube comments — python scraper (`src/ingest/youtube_collector.py`)
@@ -62,7 +67,52 @@ authoritative record of origin and is preserved byte-exact.
 
 ## Derived artifacts
 
-### v2.1 (current, 2026-07-19 — rerun after the language_type recuration)
+### v3 (current, 2026-07-19 — LID-audit corrections + lexicon-wired LID + CMI + group-aware splits)
+
+## data/interim/clean.csv + data/interim/quarantine.csv
+- source:   data/raw/singlish_mixed_sentiment_complete.csv (sha256: 5ca2952ebf1087db...)
+- script:   src/preprocess/quarantine.py @ git commit b4a79d3
+- output:   clean.csv 10160 rows (sha256: 0d197fe1bd80209c...); quarantine.csv 0 rows (sha256: 9f7dd093cd3f7591...)
+- date:     2026-07-19
+- rationale: separate 3-class-ready rows; quarantined labels kept verbatim, never remapped
+
+## data/interim/cleaned.csv
+- source:   data/interim/clean.csv (sha256: 0d197fe1bd80209c...)
+- script:   src/preprocess/clean_text.py @ git commit b4a79d3
+- output:   cleaned.csv 10160 rows (sha256: 0d197fe1bd80209c... — byte-identical
+            to clean.csv: the raw clean_text already matches the 7-step rule)
+- date:     2026-07-19
+- rationale: regenerate clean_text + text_length from documented 7-step rule
+
+## data/interim/lid.csv
+- source:   data/interim/cleaned.csv (sha256: 0d197fe1bd80209c...)
+- script:   src/preprocess/language_id.py @ git commit b4a79d3 (mined 1,806-word
+            romanized lexicon wired in, minus 2 English-ambiguous entries; adds cmi column)
+- output:   lid.csv 10160 rows (sha256: 5d62e97d0bc952c9...)
+- date:     2026-07-19
+- rationale: deterministic language_type (mixed 7318 / sinhala 1600 / english 1223 /
+            unknown 19) + language_type_manual preserved + CMI (Das & Gambäck;
+            mean 23.2 all rows, 32.2 mixed-only)
+
+## data/processed/splits/{train,val,test}_ids.txt + excluded_conflict_ids.txt
+- source:   data/interim/lid.csv (sha256: 5d62e97d0bc952c9...)
+- script:   src/preprocess/make_splits.py @ git commit b4a79d3 (GROUP-AWARE)
+- output:   train 7096, val 1524, test 1525; 15 conflicting-label duplicate rows
+            (6 groups) excluded (committed to git; LOCKED, never re-split)
+- date:     2026-07-19
+- rationale: stratified 70/15/15 over normalized-text groups, seed=42; duplicate
+            texts share a split; ZERO normalized-text overlap verified in-script
+
+## data/processed/tokenized/{train,val,test}.pt
+- source:   data/interim/lid.csv (sha256: 5d62e97d0bc952c9...) + splits/*_ids.txt
+- script:   src/preprocess/tokenize_cache.py @ git commit b4a79d3
+- output:   train.pt 7096 rows (sha256: 87959fe86607a20b...); val.pt 1524 rows
+            (sha256: f3815f1f0636780e...); test.pt 1525 rows (sha256: 2a8d0064420e0f27...)
+- date:     2026-07-19
+- rationale: one-time xlm-roberta-base tokenization (max_len=128) with per-token
+            LID tags (lexicon-aware); all experiments load this cache
+
+### v2.1 (historical — superseded by v3 the same day; pre-audit language_type)
 
 ## data/interim/clean.csv + data/interim/quarantine.csv
 - source:   data/raw/singlish_mixed_sentiment_complete.csv (sha256: 48ef313fb7174118...)
