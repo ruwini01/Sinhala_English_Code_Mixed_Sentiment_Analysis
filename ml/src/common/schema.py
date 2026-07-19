@@ -46,6 +46,13 @@ LABEL_COL = "sentiment_label"
 ID_COL = "id"
 PLATFORM_COL = "source_platform"
 
+# Hand-curated language labels from the raw file (v2: sinhala / english /
+# singlish / code-mixed, plus a few other/unknown). Preserved verbatim by
+# language_id.py before it overwrites LID_COL with the deterministic rule —
+# use THIS column for thesis figures and per-language evaluation breakdowns;
+# the deterministic column documents the reproducible pipeline rule.
+MANUAL_LID_COL = "language_type_manual"
+
 # Descriptive only — dataset-statistics tables, NEVER model inputs
 DESCRIPTIVE_COLS = ["domain", "content_type", "emotion"]
 
