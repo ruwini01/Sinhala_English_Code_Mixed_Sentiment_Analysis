@@ -2,7 +2,16 @@
 
 Input : data/interim/cleaned.csv       (step 3 output; never modified)
 Output: data/interim/lid.csv           (language_type overwritten;
+                                        language_type_manual preserves the
+                                        raw file's hand-curated labels;
                                         label_source column added)
+
+The raw file's language_type (v2: sinhala / english / singlish / code-mixed)
+is hand-curated and distinguishes romanized Sinhala ("singlish") from
+script-mixed text ("code-mixed") — something this script's lexicon rule
+cannot do. It is kept verbatim in language_type_manual for thesis figures
+and per-language evaluation; the deterministic column below stays the
+reproducible pipeline output.
 
 Rule (deterministic, cite in thesis methodology):
   Token level (whitespace tokens of clean_text):
@@ -30,7 +39,7 @@ from datetime import date
 
 import pandas as pd
 
-from src.common.schema import INTERIM_DIR, LID_COL, TEXT_COL
+from src.common.schema import INTERIM_DIR, LID_COL, MANUAL_LID_COL, TEXT_COL
 
 IN_CSV = INTERIM_DIR / "cleaned.csv"
 OUT_CSV = INTERIM_DIR / "lid.csv"
@@ -103,19 +112,21 @@ def git_head():
 def main():
     df = pd.read_csv(IN_CSV, encoding="utf-8", dtype=str)
 
-    old = df[LID_COL].str.strip().str.lower()
+    df[MANUAL_LID_COL] = df[LID_COL]  # hand-curated labels, kept verbatim
+    manual = df[MANUAL_LID_COL].str.strip().str.lower()
     df[LID_COL] = df[TEXT_COL].map(row_lang)
     df["label_source"] = "deterministic"
 
-    agree = int((old == df[LID_COL]).sum())
+    agree = int((manual == df[LID_COL]).sum())
     df.to_csv(OUT_CSV, index=False, encoding="utf-8", lineterminator="\n")
 
     print(f"rows: {len(df)}  -> {OUT_CSV}")
-    print("\nnew language_type distribution:")
+    print("\ndeterministic language_type distribution:")
     print(df[LID_COL].value_counts().to_string())
-    print("\nold language_type distribution (for the thesis comparison table):")
-    print(old.value_counts(dropna=False).to_string())
-    print(f"\nold/new agreement: {agree}/{len(df)} ({100 * agree / len(df):.1f}%)")
+    print(f"\nmanual language_type distribution (preserved in {MANUAL_LID_COL}):")
+    print(manual.value_counts(dropna=False).to_string())
+    print(f"\nmanual/deterministic agreement: {agree}/{len(df)} "
+          f"({100 * agree / len(df):.1f}%) — taxonomies differ, low is expected")
 
     print("\n--- paste into ml/DATA.md under 'Derived artifacts' ---")
     print("## data/interim/lid.csv")
