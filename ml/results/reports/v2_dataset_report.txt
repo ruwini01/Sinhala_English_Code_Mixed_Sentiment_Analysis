@@ -4,9 +4,9 @@ raw rows              : 10160
 3-class-ready rows    : 10160
 label counts          : {'positive': 3564, 'negative': 3495, 'neutral': 3101}
 platforms (normalized): {'youtube': 4400, 'facebook': 3747, 'tiktok': 1819, 'google_play': 194}
-language types (LID)  : {'mixed': 5883, 'english': 2954, 'sinhala': 1304, 'unknown': 19}
+language types (LID)  : {'mixed': 7318, 'sinhala': 1600, 'english': 1223, 'unknown': 19}
 mean clean length     : 62.0 chars
-splits (seed 42)      : {'train': 7112, 'test': 1524, 'val': 1524}
+splits (seed 42)      : {'train': 7096, 'test': 1525, 'val': 1524, 'unassigned': 15}
 
 Figures: fig_01..fig_09 in results/figures/ (dpi=300, pastel, thesis quality)
 Tables : tab_01..tab_08 in results/tables/
