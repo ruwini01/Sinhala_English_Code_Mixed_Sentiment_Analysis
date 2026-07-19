@@ -1,0 +1,583 @@
+{
+ "summary": {
+  "n_sentences": 20,
+  "lime_num_samples": 500,
+  "mean_top3_overlap_lime_vs_occlusion": 0.817
+ },
+ "records": [
+  {
+   "text": "film eka hodai",
+   "pred": "positive",
+   "words": [
+    "film",
+    "eka",
+    "hodai"
+   ],
+   "lime": [
+    0.0479,
+    0.0606,
+    0.5209
+   ],
+   "occlusion": [
+    -0.1315,
+    -0.1296,
+    0.4629
+   ],
+   "top3_overlap": 1.0
+  },
+  {
+   "text": "film eka hodai ne",
+   "pred": "positive",
+   "words": [
+    "film",
+    "eka",
+    "hodai",
+    "ne"
+   ],
+   "lime": [
+    0.058,
+    0.1188,
+    0.3408,
+    -0.0718
+   ],
+   "occlusion": [
+    -0.1885,
+    0.0077,
+    0.6417,
+    -0.091
+   ],
+   "top3_overlap": 0.67
+  },
+  {
+   "text": "me phone eka harima hodai",
+   "pred": "positive",
+   "words": [
+    "me",
+    "phone",
+    "eka",
+    "harima",
+    "hodai"
+   ],
+   "lime": [
+    -0.0128,
+    0.0364,
+    0.027,
+    0.2787,
+    0.4429
+   ],
+   "occlusion": [
+    -0.0363,
+    -0.0858,
+    0.0072,
+    0.1469,
+    0.3907
+   ],
+   "top3_overlap": 0.67
+  },
+  {
+   "text": "me phone eka hodai",
+   "pred": "positive",
+   "words": [
+    "me",
+    "phone",
+    "eka",
+    "hodai"
+   ],
+   "lime": [
+    -0.0487,
+    0.0067,
+    0.1076,
+    0.3838
+   ],
+   "occlusion": [
+    -0.1431,
+    -0.2044,
+    0.1565,
+    0.6297
+   ],
+   "top3_overlap": 0.67
+  },
+  {
+   "text": "service eka godak hondai",
+   "pred": "positive",
+   "words": [
+    "service",
+    "eka",
+    "godak",
+    "hondai"
+   ],
+   "lime": [
+    0.2362,
+    0.1856,
+    0.4055,
+    0.3802
+   ],
+   "occlusion": [
+    -0.0392,
+    -0.0617,
+    0.0085,
+    -0.0132
+   ],
+   "top3_overlap": 1.0
+  },
+  {
+   "text": "service eka hondai",
+   "pred": "positive",
+   "words": [
+    "service",
+    "eka",
+    "hondai"
+   ],
+   "lime": [
+    0.1963,
+    0.0346,
+    0.5692
+   ],
+   "occlusion": [
+    -0.035,
+    -0.0625,
+    0.4369
+   ],
+   "top3_overlap": 1.0
+  },
+  {
+   "text": "mama meka kamathi",
+   "pred": "neutral",
+   "words": [
+    "mama",
+    "meka",
+    "kamathi"
+   ],
+   "lime": [
+    0.0389,
+    0.0365,
+    0.0185
+   ],
+   "occlusion": [
+    -0.05,
+    0.089,
+    0.4132
+   ],
+   "top3_overlap": 1.0
+  },
+  {
+   "text": "mama meka kamathi ne",
+   "pred": "neutral",
+   "words": [
+    "mama",
+    "meka",
+    "kamathi",
+    "ne"
+   ],
+   "lime": [
+    0.0687,
+    0.0504,
+    -0.025,
+    -0.0052
+   ],
+   "occlusion": [
+    0.0897,
+    0.1692,
+    0.0143,
+    0.0962
+   ],
+   "top3_overlap": 1.0
+  },
+  {
+   "text": "ela machan supiri",
+   "pred": "positive",
+   "words": [
+    "ela",
+    "machan",
+    "supiri"
+   ],
+   "lime": [
+    -0.0038,
+    -0.0227,
+    0.8869
+   ],
+   "occlusion": [
+    -0.0054,
+    -0.0047,
+    0.9264
+   ],
+   "top3_overlap": 1.0
+  },
+  {
+   "text": "epa machan meka ganna",
+   "pred": "neutral",
+   "words": [
+    "epa",
+    "machan",
+    "meka",
+    "ganna"
+   ],
+   "lime": [
+    -0.0089,
+    0.1143,
+    0.1534,
+    0.177
+   ],
+   "occlusion": [
+    -0.1411,
+    -0.0122,
+    0.0541,
+    0.2224
+   ],
+   "top3_overlap": 1.0
+  },
+  {
+   "text": "Doctor soya sos wala guna aguna kiyanna puluwanda",
+   "pred": "neutral",
+   "words": [
+    "Doctor",
+    "soya",
+    "sos",
+    "wala",
+    "guna",
+    "aguna",
+    "kiyanna",
+    "puluwanda"
+   ],
+   "lime": [
+    0.1472,
+    0.0155,
+    0.0164,
+    -0.0112,
+    -0.0887,
+    -0.0534,
+    -0.1096,
+    0.0809
+   ],
+   "occlusion": [
+    0.0621,
+    0.0064,
+    0.0904,
+    0.0188,
+    -0.1426,
+    -0.1973,
+    -0.3234,
+    -0.1605
+   ],
+   "top3_overlap": 0.67
+  },
+  {
+   "text": "Thanks so much",
+   "pred": "positive",
+   "words": [
+    "Thanks",
+    "so",
+    "much"
+   ],
+   "lime": [
+    0.7369,
+    0.3708,
+    0.307
+   ],
+   "occlusion": [
+    0.0295,
+    0.0095,
+    0.0045
+   ],
+   "top3_overlap": 1.0
+  },
+  {
+   "text": "ape bauddharete siuru dan sasene wanesane aye mewa hodeta balaganne",
+   "pred": "negative",
+   "words": [
+    "ape",
+    "bauddharete",
+    "siuru",
+    "dan",
+    "sasene",
+    "wanesane",
+    "aye",
+    "mewa",
+    "hodeta",
+    "balaganne"
+   ],
+   "lime": [
+    -0.0014,
+    -0.0114,
+    0.1266,
+    0.0367,
+    0.0442,
+    0.1119,
+    0.0125,
+    -0.0117,
+    -0.0046,
+    0.108
+   ],
+   "occlusion": [
+    0.0208,
+    -0.0399,
+    0.0182,
+    0.0181,
+    -0.0386,
+    0.0799,
+    -0.0205,
+    0.0139,
+    -0.0337,
+    0.2887
+   ],
+   "top3_overlap": 0.67
+  },
+  {
+   "text": "ane meyaa yana bollywood a nama kiyanawa tiyaa hithannawath puluwanda",
+   "pred": "neutral",
+   "words": [
+    "ane",
+    "meyaa",
+    "yana",
+    "bollywood",
+    "a",
+    "nama",
+    "kiyanawa",
+    "tiyaa",
+    "hithannawath",
+    "puluwanda"
+   ],
+   "lime": [
+    -0.0068,
+    0.0063,
+    0.039,
+    0.1054,
+    0.0019,
+    -0.0151,
+    0.0027,
+    -0.0262,
+    0.0249,
+    0.0896
+   ],
+   "occlusion": [
+    -0.0235,
+    -0.0383,
+    -0.0036,
+    0.1373,
+    -0.0099,
+    -0.0099,
+    -0.0301,
+    -0.044,
+    0.02,
+    0.0358
+   ],
+   "top3_overlap": 0.67
+  },
+  {
+   "text": "උගේ බිස්නස් එකට කෙලින්න එපා..🥴",
+   "pred": "negative",
+   "words": [
+    "උගේ",
+    "බිස්නස්",
+    "එකට",
+    "කෙලින්න",
+    "එපා..🥴"
+   ],
+   "lime": [
+    0.141,
+    0.1002,
+    0.0409,
+    0.0066,
+    0.3494
+   ],
+   "occlusion": [
+    0.1618,
+    0.0269,
+    -0.013,
+    -0.0454,
+    -0.062
+   ],
+   "top3_overlap": 0.67
+  },
+  {
+   "text": "බන්දුගෙ පුතාsmart ලස්සන හොද පුතෙක්",
+   "pred": "positive",
+   "words": [
+    "බන්දුගෙ",
+    "පුතාsmart",
+    "ලස්සන",
+    "හොද",
+    "පුතෙක්"
+   ],
+   "lime": [
+    0.1578,
+    0.2602,
+    0.2782,
+    0.3198,
+    0.2162
+   ],
+   "occlusion": [
+    -0.0514,
+    -0.0346,
+    0.0349,
+    -0.0073,
+    0.0271
+   ],
+   "top3_overlap": 0.67
+  },
+  {
+   "text": "oya manussayata daduwama denna one kiyala hithenawa",
+   "pred": "positive",
+   "words": [
+    "oya",
+    "manussayata",
+    "daduwama",
+    "denna",
+    "one",
+    "kiyala",
+    "hithenawa"
+   ],
+   "lime": [
+    0.1291,
+    0.1151,
+    0.0771,
+    0.0411,
+    0.0927,
+    -0.1322,
+    0.1239
+   ],
+   "occlusion": [
+    0.1359,
+    -0.0574,
+    -0.0085,
+    0.0384,
+    -0.0204,
+    -0.2503,
+    0.2305
+   ],
+   "top3_overlap": 0.67
+  },
+  {
+   "text": "Pissu gon moll leddhu saththu maruwena puwaru thiyeddi ohoma yana aya ona tharam",
+   "pred": "negative",
+   "words": [
+    "Pissu",
+    "gon",
+    "moll",
+    "leddhu",
+    "saththu",
+    "maruwena",
+    "puwaru",
+    "thiyeddi",
+    "ohoma",
+    "yana",
+    "aya",
+    "ona",
+    "tharam"
+   ],
+   "lime": [
+    0.172,
+    0.1071,
+    0.0778,
+    0.0073,
+    -0.0212,
+    0.0164,
+    0.0381,
+    -0.0057,
+    0.0016,
+    0.0161,
+    -0.0026,
+    0.0127,
+    0.0459
+   ],
+   "occlusion": [
+    0.2555,
+    0.1096,
+    0.116,
+    -0.0553,
+    -0.1056,
+    0.0074,
+    -0.0327,
+    -0.0104,
+    -0.0283,
+    0.0663,
+    -0.0111,
+    -0.0082,
+    0.0485
+   ],
+   "top3_overlap": 1.0
+  },
+  {
+   "text": "wasara 5 wenawa nindak na uk wala inne lede k balanawa mama nisa neme",
+   "pred": "neutral",
+   "words": [
+    "wasara",
+    "5",
+    "wenawa",
+    "nindak",
+    "na",
+    "uk",
+    "wala",
+    "inne",
+    "lede",
+    "k",
+    "balanawa",
+    "mama",
+    "nisa",
+    "neme"
+   ],
+   "lime": [
+    -0.0093,
+    0.0137,
+    -0.0198,
+    -0.026,
+    -0.0303,
+    0.0016,
+    -0.0151,
+    -0.0162,
+    -0.0095,
+    0.0434,
+    -0.031,
+    0.0308,
+    -0.0724,
+    0.0273
+   ],
+   "occlusion": [
+    0.0489,
+    0.0516,
+    0.0154,
+    -0.051,
+    0.01,
+    0.05,
+    0.0211,
+    0.0144,
+    0.0517,
+    0.0907,
+    0.0049,
+    0.0414,
+    -0.0425,
+    0.0598
+   ],
+   "top3_overlap": 0.67
+  },
+  {
+   "text": "me දේවල් හරිම apprasanniනේද matanam appiriyayi",
+   "pred": "negative",
+   "words": [
+    "me",
+    "දේවල්",
+    "හරිම",
+    "apprasanniනේද",
+    "matanam",
+    "appiriyayi"
+   ],
+   "lime": [
+    -0.0454,
+    0.041,
+    -0.0201,
+    -0.0009,
+    -0.0382,
+    0.1177
+   ],
+   "occlusion": [
+    0.0226,
+    0.0267,
+    0.0641,
+    0.1583,
+    -0.025,
+    0.2767
+   ],
+   "top3_overlap": 0.67
+  }
+ ]
+}
