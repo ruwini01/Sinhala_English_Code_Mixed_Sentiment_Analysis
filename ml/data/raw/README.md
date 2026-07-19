@@ -2,7 +2,8 @@
 
 Holds the single merged raw dataset:
 
-- `singlish_mixed_sentiment_complete.csv` (10,539 rows, 11 columns)
+- `singlish_mixed_sentiment_complete.csv` (10,160 rows, 11 columns — v2 dataset,
+  replaced 2026-07-19; v1 was 10,539 rows, see ml/DATA.md for provenance history)
 
 This file is **immutable**: no script may write to this directory. It is
 gitignored (kept local until the dataset is cleared for publication); its
