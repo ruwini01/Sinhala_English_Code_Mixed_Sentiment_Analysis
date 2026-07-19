@@ -25,10 +25,26 @@ import pandas as pd
 from src.common.schema import (
     INTERIM_DIR,
     LABEL_COL,
+    PLATFORM_COL,
     RAW_COLUMNS,
     RAW_CSV,
     VALID_LABELS,
 )
+
+KNOWN_PLATFORMS = {"youtube", "facebook", "tiktok", "google_play"}
+
+
+def normalize_platform(row):
+    """Canonical lowercase platform; a few raw rows have language values
+    shifted into source_platform, so fall back to inferring from source_url."""
+    v = str(row[PLATFORM_COL]).strip().lower().replace(" ", "_")
+    if v in KNOWN_PLATFORMS:
+        return v
+    url = str(row["source_url"]).strip().lower()
+    for p in KNOWN_PLATFORMS:
+        if p.replace("_", "") in url.replace("_", "").replace(".", ""):
+            return p
+    return "unknown"
 
 CLEAN_CSV = INTERIM_DIR / "clean.csv"
 QUARANTINE_CSV = INTERIM_DIR / "quarantine.csv"
@@ -57,6 +73,7 @@ def main():
         sys.exit("ERROR: schema mismatch — run validate_schema first")
 
     n_raw = len(df)
+    df[PLATFORM_COL] = df.apply(normalize_platform, axis=1)
     normalized = df[LABEL_COL].str.strip().str.lower()
     valid_mask = normalized.isin(VALID_LABELS)
 
