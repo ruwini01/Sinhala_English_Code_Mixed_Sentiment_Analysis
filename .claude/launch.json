@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "singlish-frontend",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "frontend", "run", "dev"],
+      "port": 3000
+    },
+    {
+      "name": "singlish-backend",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "ml\\run_api.cmd"],
+      "port": 8000
+    }
+  ]
+}

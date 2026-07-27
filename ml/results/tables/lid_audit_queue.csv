@@ -1,0 +1,437 @@
+id,text,sentiment_label,split,manual,expected,verdict,has_sinhala_script,latin_words,lexicon_hits,lexicon_hit_share
+9334,පවු බන් මිනිස්සු ෆොන් ගත්තට එව දන්නෙ නැ ඇත්තටම් ඔබන්නෙ එව අපෙ සිංහලයා ජොක් එකට අරන්න් එ මිනිස්සු දන්නෙ නැතුව එබිලා ඇති 😔😌☺️,positive,train,code-mixed,sinhala,HARD,True,0,0,0.0
+9348,වාසි ප්ලේස් එකක්. හැට් එක දාල සයිඩ් එකේ ඉන්න මලයා හොඳ සර්විස් එකක් දුන්නා. එයා නැද්ද දැන්,positive,train,code-mixed,sinhala,HARD,True,0,0,0.0
+9447,දැන් දැන් ට්රැක් අවුට් බ්රෝ ඔයා,negative,train,code-mixed,sinhala,HARD,True,0,0,0.0
+9524,අඩේ ඔය සිද්ඩියෙං පස්සේ මම ගත්තෙත් A05 එකක් එකතමා තාමත් පවිච්චිබ්කරන්නේ ගලේ ගැහුවත් බඩු වැඩ,neutral,train,code-mixed,sinhala,HARD,True,0,0,0.0
+10113,ජෙන් z එකෙක් ඉන්නවා අපේ අක්කගෙ කොල්ලා ඌත් එහෙමයි අමුකාලකන්නි 😂 ලැට් එකට ගියොත් ඒකෙන් එලියට එන්න පැයක් වත් යනවා රෑ එලිවෙනකල් ගේම් ගහනවා,negative,train,code-mixed,sinhala,HARD,True,0,0,0.0
+7715,ඊyaa..iiiiiiiiiiya,negative,train,singlish,code-mixed,HARD,True,2,0,0.0
+3316,Loads of related memories with amma,positive,train,english,singlish,SOFT,False,6,1,0.167
+6254,This is AI,neutral,train,english,singlish,SOFT,False,3,1,0.333
+8651,Great photography pathum,positive,train,english,singlish,SOFT,False,3,1,0.333
+8768,It should be ban for all,positive,train,english,singlish,SOFT,False,6,1,0.167
+8775,First ban the production 😄,negative,train,english,singlish,SOFT,False,4,1,0.25
+8886,Need a video about Kal Milk,neutral,train,english,singlish,SOFT,False,5,1,0.2
+9392,❤🥺,neutral,train,other,unknown,SOFT,False,0,0,0.0
+9459,❤️🌝,neutral,train,other,unknown,SOFT,False,0,0,0.0
+9462,❤❤,neutral,train,other,unknown,SOFT,False,0,0,0.0
+9493,🥯🍔,neutral,train,other,unknown,SOFT,False,0,0,0.0
+9519,❤,neutral,test,other,unknown,SOFT,False,0,0,0.0
+9521,1❤❤,neutral,val,other,unknown,SOFT,False,0,0,0.0
+9963,👍,positive,train,other,unknown,SOFT,False,0,0,0.0
+9973,💙💙,positive,test,other,unknown,SOFT,False,0,0,0.0
+10030,😂,positive,val,other,unknown,SOFT,False,0,0,0.0
+10059,🫠💔,negative,val,other,unknown,SOFT,False,0,0,0.0
+10076,👍🏾👍🏾👍🏾👍🏾👍🏾👍🏾🇱🇰♥️🇱🇰 🇩🇪,positive,test,other,unknown,SOFT,False,0,0,0.0
+131,matara hela rawla chees kottu try karanna,neutral,val,singlish,english,SOFT,False,7,1,0.143
+341,harma lassan kathawak,neutral,val,singlish,english,SOFT,False,3,0,0.0
+488,supirima pidi wadda rattaran putata teruwan saranai,positive,train,singlish,english,SOFT,False,7,1,0.143
+515,sinhala bashweth baros baros gawam,neutral,val,singlish,english,SOFT,False,5,0,0.0
+523,thorathuru thakshanaya bawithakaranawa aniwaryen,neutral,train,singlish,english,SOFT,False,4,0,0.0
+532,pissan kotuwata dapan mamawa,negative,train,singlish,english,SOFT,False,4,0,0.0
+538,pissekta pissek hambawela,negative,train,singlish,english,SOFT,False,3,0,0.0
+548,htto mewwane script,negative,val,singlish,english,SOFT,False,3,0,0.0
+582,peumi harima open charithayak,positive,train,singlish,english,SOFT,False,4,0,0.0
+585,piyumi naog harema dukahituna oyagana,negative,val,singlish,english,SOFT,False,5,0,0.0
+588,piyume hadawatinama subapatanawa,positive,train,singlish,english,SOFT,False,3,0,0.0
+596,piyumi akkige life eka man sahenna kamati,positive,test,singlish,english,SOFT,False,7,1,0.143
+614,matanamewa therenna oiiiii,neutral,train,singlish,english,SOFT,False,3,0,0.0
+620,meyata pssuda me charith malliwa mama dannawa,neutral,test,singlish,english,SOFT,False,7,1,0.143
+648,pixxu hadenawa e story eka all the very best,positive,train,singlish,english,SOFT,False,8,1,0.125
+720,jeewithye dadiwa wedanawak labuwa kenata niwenawa dakinna pahasui,neutral,test,singlish,english,SOFT,False,8,0,0.0
+729,bawdda samata mehenen wahanse adarsayak,positive,train,singlish,english,SOFT,False,5,0,0.0
+747,akkiw kettu welaso cute,positive,test,singlish,english,SOFT,False,4,0,0.0
+811,well said akke if they dont disturb other people we should mind our own business,positive,train,singlish,english,SOFT,False,15,1,0.067
+888,temu lankawata badu ewanawada,neutral,test,singlish,english,SOFT,False,4,0,0.0
+1026,thank you azraa akki watina video ekak,positive,train,singlish,english,SOFT,False,7,1,0.143
+1038,aththatama nangi harima wadagatha topic ekak thank you,positive,train,singlish,english,SOFT,False,8,1,0.125
+1060,sahodaraya chamuditha janathawa obasamagai,positive,val,singlish,english,SOFT,False,4,0,0.0
+1219,akka dubbing field ekatat galapena cute voice,positive,train,singlish,english,SOFT,False,7,1,0.143
+1418,mekanam aththatama watina kathawak,positive,train,singlish,english,SOFT,False,4,0,0.0
+1691,harima lasana wadasatahana,neutral,test,singlish,english,SOFT,False,3,0,0.0
+1732,murali oya kade giyane mahinda rajapase ta you are a goood person be the same be a good human being thank you,positive,train,singlish,english,SOFT,False,20,2,0.1
+1830,obe awanka bawata nirbheetha kamata garu karami,positive,train,singlish,english,SOFT,False,7,0,0.0
+1840,man kemathima charithayak susanthika jayasinha,positive,val,singlish,english,SOFT,False,5,0,0.0
+1922,ape hamuduruwange buddiya danumata sannasgala sir respect,positive,test,singlish,english,SOFT,False,7,1,0.143
+1940,thank you kapil sharma yohani api adambarai,positive,train,singlish,english,SOFT,False,7,1,0.143
+1945,voice controlling style features eye contact body language supiri,positive,val,singlish,english,SOFT,False,9,1,0.111
+1997,kawda mei niliya tv add ekakath innawa,neutral,train,singlish,english,SOFT,False,7,1,0.143
+2075,varadda police mamalagene,negative,val,singlish,english,SOFT,False,3,0,0.0
+2083,elakiri police ballonta,negative,test,singlish,english,SOFT,False,3,0,0.0
+2113,vera level ane police karaya pav bang,negative,train,singlish,english,SOFT,False,7,1,0.143
+2261,girls homoner labadeemen me thathwaya magaharinda puluwan neader,neutral,train,singlish,english,SOFT,False,8,1,0.125
+2309,ketunu game owene wewaha anumata karannehe bibalayata anyway lokuwereddak,negative,train,singlish,english,SOFT,False,9,0,0.0
+2333,asamanyayi namuth hodayi hithata ekagaba oyadennata jeevath venda puluvan,positive,train,singlish,english,SOFT,False,9,0,0.0
+2379,jeewite windimata risiseida demu eyai minisathkam depalata subapathum,positive,train,singlish,english,SOFT,False,8,0,0.0
+2446,oua ponnayata nithiyata genn onikalaknnilankawata atthatama shapayak,negative,test,singlish,english,SOFT,False,7,0,0.0
+2469,suda bro chandimalwa atta dekken ellanawa gall face ground ekkay chandimal ponnayek,negative,train,singlish,english,SOFT,False,12,1,0.083
+2488,harima wtina interview ekak thank you both of you,positive,train,singlish,english,SOFT,False,9,1,0.111
+2646,iq option boruwakda,neutral,train,singlish,english,SOFT,False,3,0,0.0
+2666,oyanam elakiri porak superb work,positive,train,singlish,english,SOFT,False,5,0,0.0
+2667,pttm chrithyk mn dakpu issr idnm adry krn nihthamani charithyk anushka udana,positive,test,singlish,english,SOFT,False,12,1,0.083
+2671,vadagath charithayak good luck anushka great job hari tv,positive,train,singlish,english,SOFT,False,9,1,0.111
+2698,anushka ayiya respect oy,positive,val,singlish,english,SOFT,False,4,0,0.0
+2728,adambarai anushka ayye oyagena,positive,val,singlish,english,SOFT,False,4,0,0.0
+2789,hapi bardsey yash akki hamadamath sathutin inna,positive,train,singlish,english,SOFT,False,7,1,0.143
+2798,yashge ammith harima lassanay hass harima wasana wanthay,positive,train,singlish,english,SOFT,False,8,0,0.0
+2904,bro youre so good good video bro make it more blur karanna faces privacy ekata,positive,train,singlish,english,SOFT,False,15,2,0.133
+2990,phone num verification illanawane,neutral,test,singlish,english,SOFT,False,4,0,0.0
+2993,supirima supiriyak bro,positive,train,singlish,english,SOFT,False,3,0,0.0
+3003,supiriyak thamy broo,positive,train,singlish,english,SOFT,False,3,0,0.0
+3008,baduwa lankawata awama wadida tax,neutral,train,singlish,english,SOFT,False,5,0,0.0
+3032,kaduluth awa akki babata budusaranayi parisamin balaganna akki,positive,train,singlish,english,SOFT,False,8,1,0.125
+3079,ane me video baluwat pase mata danune me lede kiylathank you so much doctor,positive,train,singlish,english,SOFT,False,14,2,0.143
+3118,doctor oya ledeta can you help me,neutral,train,singlish,english,SOFT,False,7,1,0.143
+3120,edaa makeup krhma,neutral,train,singlish,english,SOFT,False,3,0,0.0
+3126,Wedanawakin thora ikmn maranayk,negative,train,singlish,english,SOFT,False,4,0,0.0
+3127,anna anna natamu mithura,positive,test,singlish,english,SOFT,False,4,0,0.0
+3132,adrei aththtma,positive,train,singlish,english,SOFT,False,2,0,0.0
+3145,Siyaludenata kisidu apadawak nowewa,positive,train,singlish,english,SOFT,False,4,0,0.0
+3147,Subapathum,positive,val,singlish,english,SOFT,False,1,0,0.0
+3157,Karma karumyk,negative,train,singlish,english,SOFT,False,2,0,0.0
+3198,Woow fantastic weldone darling Jayaweewa,positive,val,singlish,english,SOFT,False,5,0,0.0
+3213,Nyama acting nyama frames editing story telling,positive,val,singlish,english,SOFT,False,7,0,0.0
+3309,Kaalakanni uddachcha jvp maalima thrasthawaadi yoooo aparada kaarayo,negative,val,singlish,english,SOFT,False,8,0,0.0
+3322,Meyage netilla seratama hapan,negative,val,singlish,english,SOFT,False,4,0,0.0
+3364,Gammk,positive,train,singlish,english,SOFT,False,1,0,0.0
+3376,Saman Kumara batarina yako rangan nainti nain,neutral,train,singlish,english,SOFT,False,7,1,0.143
+3460,Im in jersey how can I order jacket eka link please,neutral,val,singlish,english,SOFT,False,10,1,0.1
+3468,Kondenam shok aaaa,positive,train,singlish,english,SOFT,False,3,0,0.0
+3504,Eththtama kethyi,negative,train,singlish,english,SOFT,False,2,0,0.0
+3518,Mewane supirima match,positive,train,singlish,english,SOFT,False,3,0,0.0
+3534,Eththa,positive,train,singlish,english,SOFT,False,1,0,0.0
+3547,Mini maruwo,negative,test,singlish,english,SOFT,False,2,0,0.0
+3576,Al ehemama,neutral,train,singlish,english,SOFT,False,2,0,0.0
+3665,Thoraganiin,neutral,train,singlish,english,SOFT,False,1,0,0.0
+3672,Niliyo paradai,positive,train,singlish,english,SOFT,False,2,0,0.0
+3677,Gemmak allamu petiya,positive,train,singlish,english,SOFT,False,3,0,0.0
+3690,Duwa wagamai,neutral,train,singlish,english,SOFT,False,2,0,0.0
+3737,Travel weekend winasai,negative,train,singlish,english,SOFT,False,3,0,0.0
+3757,Supiry,positive,train,singlish,english,SOFT,False,1,0,0.0
+3801,Madaviyo marannaone okun,negative,train,singlish,english,SOFT,False,3,0,0.0
+3805,Policiya thavama niditha,negative,val,singlish,english,SOFT,False,3,0,0.0
+3840,pawan gahapiya,negative,train,singlish,english,SOFT,False,2,0,0.0
+3860,pawan gahuwalu,neutral,train,singlish,english,SOFT,False,2,0,0.0
+3879,gahapiya sunna,negative,train,singlish,english,SOFT,False,2,0,0.0
+3924,Bahirawaya gilalada,neutral,train,singlish,english,SOFT,False,2,0,0.0
+4009,pampori gahannawa nawaththanna,negative,val,singlish,english,SOFT,False,3,0,0.0
+4024,Gammak,positive,train,singlish,english,SOFT,False,1,0,0.0
+4025,Adoo,positive,train,singlish,english,SOFT,False,1,0,0.0
+4028,Addeh,positive,val,singlish,english,SOFT,False,1,0,0.0
+4040,Lokaye dichital diunuwa,neutral,train,singlish,english,SOFT,False,3,0,0.0
+4048,Little killer soori,positive,train,singlish,english,SOFT,False,3,0,0.0
+4076,Afftsirii,negative,train,singlish,english,SOFT,False,1,0,0.0
+4078,Chi Ku,negative,train,singlish,english,SOFT,False,2,0,0.0
+4101,Kohomath nalu niliyo yano eno owat prasnada,negative,train,singlish,english,SOFT,False,7,0,0.0
+4105,Bori,negative,val,singlish,english,SOFT,False,1,0,0.0
+4148,Rip janapriya niliya,negative,train,singlish,english,SOFT,False,3,0,0.0
+4153,Help kawda e,neutral,train,singlish,english,SOFT,False,2,0,0.0
+4157,Kawda,neutral,test,singlish,english,SOFT,False,1,0,0.0
+4180,Ponn news,negative,train,singlish,english,SOFT,False,2,0,0.0
+4203,Kari wesiyak,negative,train,singlish,english,SOFT,False,2,0,0.0
+4216,Brake gahuwoth baba visiwey,negative,val,singlish,english,SOFT,False,4,0,0.0
+4278,Boruwakda,neutral,test,singlish,english,SOFT,False,1,0,0.0
+4371,Kalakanniteka tu nothaken,negative,train,singlish,english,SOFT,False,3,0,0.0
+4376,nkn hkgnn oy,neutral,train,singlish,english,SOFT,False,3,0,0.0
+4378,Rameez Dasthakeer harimannek wage data tiyagena aguru kawanawa,negative,test,singlish,english,SOFT,False,8,1,0.125
+4383,Carl De Silva chhoti kale apiwath angaru kewa,neutral,train,singlish,english,SOFT,False,8,1,0.125
+4403,Sudath Wasantha adyapana prathisanskarana awashyai,neutral,train,singlish,english,SOFT,False,5,0,0.0
+4421,Susil Abeyapala sajeyage pukata dapan dewa,negative,train,singlish,english,SOFT,False,6,0,0.0
+4464,Vahana kapiya,negative,train,singlish,english,SOFT,False,2,0,0.0
+4465,Muta wahana mila kapu nasaraniya,negative,train,singlish,english,SOFT,False,5,0,0.0
+4468,Thel pakenda,negative,test,singlish,english,SOFT,False,2,0,0.0
+4530,Lasantha Seream Lasantha Dulip huththo police yata palayan,negative,train,singlish,english,SOFT,False,8,0,0.0
+4572,Anurayata kelawenakota Rajapaksha lata madam gahapuwama jada peppanta maara happy,negative,train,singlish,english,SOFT,False,10,0,0.0
+4579,Prasan Namal Thilakarathna mahimda babada pala uk kanno,negative,train,singlish,english,SOFT,False,8,1,0.125
+4597,Gog huttek,negative,train,singlish,english,SOFT,False,2,0,0.0
+4740,Gawayo,negative,train,singlish,english,SOFT,False,1,0,0.0
+4742,Nodkin kalakaniya ratta yahapatha karnwath akamathi moda musalayek,negative,train,singlish,english,SOFT,False,8,1,0.125
+4744,Amu Gawayek,negative,train,singlish,english,SOFT,False,2,0,0.0
+4745,Topi manasika leddu,negative,train,singlish,english,SOFT,False,3,0,0.0
+4753,Jesus phitai,positive,train,singlish,english,SOFT,False,2,0,0.0
+4821,Nuwara parawal patu senaga adhika nagarayak,neutral,train,singlish,english,SOFT,False,6,0,0.0
+4846,Hak gediya,neutral,train,singlish,english,SOFT,False,2,0,0.0
+4892,Bandula Wasantha Girabegedara media gayo,negative,train,singlish,english,SOFT,False,5,0,0.0
+4899,Indragith Shantha okunta aniwarayen chek karanna one,negative,train,singlish,english,SOFT,False,7,1,0.143
+4900,Agp Amarasingha Amarasingha media wediyo rata puravasiyanta samaanai,neutral,test,singlish,english,SOFT,False,8,1,0.125
+4918,Chandana Jayawardana police respect,positive,train,singlish,english,SOFT,False,4,0,0.0
+4921,Nuwan Wijewardena hasirima sakai,neutral,train,singlish,english,SOFT,False,4,0,0.0
+4924,Ravindra Vitharana media wediyo hara harak,negative,train,singlish,english,SOFT,False,6,0,0.0
+4928,Rumesh Dissanayake respect police,positive,train,singlish,english,SOFT,False,4,0,0.0
+4945,Sam Lanka Suri Tours Bomba aragena ei maadya weedin wagee Police rajakaariyata baadhaa kiyannee mewatai,negative,train,singlish,english,SOFT,False,15,2,0.133
+4969,yam yam getalu pawathi,negative,test,singlish,english,SOFT,False,4,0,0.0
+5162,Adha o/l result enawadha,neutral,train,singlish,english,SOFT,False,3,0,0.0
+5194,Ulapane budy dot net gay saaduth piti paase lagagena,negative,train,singlish,english,SOFT,False,9,0,0.0
+5197,Lankawata wahinawa,neutral,val,singlish,english,SOFT,False,2,0,0.0
+5199,GOVI PRASNAYA EKMANIN VISADANU..,neutral,val,singlish,english,SOFT,False,4,0,0.0
+5205,Guu godwal walatm hod news,negative,val,singlish,english,SOFT,False,5,0,0.0
+5217,Aadaraei sir. Oluva edimila sapaththiwaen gahana..aawaagasheelee poleciyae hamooma arin waryalllaa,negative,test,singlish,english,SOFT,False,11,1,0.091
+5250,E belma..,positive,test,singlish,english,SOFT,False,1,0,0.0
+5261,adai innathibbe,positive,train,singlish,english,SOFT,False,2,0,0.0
+5274,Theruwansaranai,positive,train,singlish,english,SOFT,False,1,0,0.0
+5276,METHUMATA garahana NNP/Jvp bath balyani balpiyaw nihathamanikama...,positive,train,singlish,english,SOFT,False,8,0,0.0
+5277,Maruwa samaga wase.,negative,train,singlish,english,SOFT,False,3,0,0.0
+5281,Mums idimila akmawa left,negative,val,singlish,english,SOFT,False,4,0,0.0
+5288,WALEN NAGITALA AAWAWAGEE,negative,train,singlish,english,SOFT,False,3,0,0.0
+5292,Sathara pera nimithi,neutral,train,singlish,english,SOFT,False,3,0,0.0
+5305,Anna sarana asarana wela kotuwata warella ekawa beragannath,negative,train,singlish,english,SOFT,False,8,1,0.125
+5306,metana haminenawane,negative,test,singlish,english,SOFT,False,2,0,0.0
+5308,Npp jayaa,positive,train,singlish,english,SOFT,False,2,0,0.0
+5311,Satakyo gathakayoo,negative,test,singlish,english,SOFT,False,2,0,0.0
+5313,mooda baiyooo iwaraai,negative,train,singlish,english,SOFT,False,3,0,0.0
+5351,Wadamahaththaya,neutral,train,singlish,english,SOFT,False,1,0,0.0
+5353,Gothayek,negative,train,singlish,english,SOFT,False,1,0,0.0
+5355,Obathumata sthuthiy,positive,train,singlish,english,SOFT,False,2,0,0.0
+5370,Aiyyyoo sami,neutral,test,singlish,english,SOFT,False,2,0,0.0
+5393,Ubath kona kapahan,negative,train,singlish,english,SOFT,False,3,0,0.0
+5395,Jeppo kiyannema kuhaka jathiyak,negative,val,singlish,english,SOFT,False,4,0,0.0
+5402,aparaade uttoo,negative,test,singlish,english,SOFT,False,2,0,0.0
+5461,wow Rohith speaking better than lankans..,positive,train,singlish,english,SOFT,False,6,0,0.0
+5515,Alhamdulillah zahira go zahira,positive,test,singlish,english,SOFT,False,4,0,0.0
+5594,Ahemada,neutral,val,singlish,english,SOFT,False,1,0,0.0
+5603,Akatena karakvanava katava,negative,train,singlish,english,SOFT,False,3,0,0.0
+5621,maan hithuwe heenayak kiyalane,positive,test,singlish,english,SOFT,False,4,0,0.0
+5653,chicken samosa ned knne 😓,negative,train,singlish,english,SOFT,False,4,0,0.0
+5661,vije vageda ranjan,neutral,train,singlish,english,SOFT,False,3,0,0.0
+5674,doctor used whnwal,neutral,train,singlish,english,SOFT,False,3,0,0.0
+5687,Yow poddo️,positive,test,singlish,english,SOFT,False,2,0,0.0
+5689,Gammka malliyo🤭️🩹,positive,train,singlish,english,SOFT,False,2,0,0.0
+5706,ekemma,positive,train,singlish,english,SOFT,False,1,0,0.0
+5712,reply karannanoo,neutral,train,singlish,english,SOFT,False,2,0,0.0
+5714,parissamata ayye,positive,train,singlish,english,SOFT,False,2,0,0.0
+5718,ayya,positive,test,singlish,english,SOFT,False,1,0,0.0
+5724,parissamen sudda🤟,positive,train,singlish,english,SOFT,False,2,0,0.0
+5725,Halow💗,positive,train,singlish,english,SOFT,False,1,0,0.0
+5726,nemi,neutral,train,singlish,english,SOFT,False,1,0,0.0
+5727,Mh 💗,positive,test,singlish,english,SOFT,False,1,0,0.0
+5731,aa ayyee,positive,test,singlish,english,SOFT,False,2,0,0.0
+5733,Mh🫂,positive,train,singlish,english,SOFT,False,1,0,0.0
+5743,Oynn hbama dssyek sudumhttya🌝💗,positive,train,singlish,english,SOFT,False,4,0,0.0
+5746,yashodara pilimekuth gennko 💝,positive,train,singlish,english,SOFT,False,3,0,0.0
+5749,lssni,positive,test,singlish,english,SOFT,False,1,0,0.0
+5751,Acting ❎❗ jiwitha kthawa ✅❗,neutral,train,singlish,english,SOFT,False,3,0,0.0
+5754,Karima acting,positive,train,singlish,english,SOFT,False,2,0,0.0
+5756,Bathkuro ( Balangoda ) 🔥,positive,train,singlish,english,SOFT,False,2,0,0.0
+5760,kohom edit krnwd mnd 🙂️🩹!,neutral,test,singlish,english,SOFT,False,4,0,0.0
+5762,real sidiyak video krla wage acting 💜️yo someone bring this man to sl cinema 🍃,positive,train,singlish,english,SOFT,False,14,2,0.143
+5766,ambho acting perfect ️,positive,train,singlish,english,SOFT,False,3,0,0.0
+5768,Deyk wennm one therenn🩹🫶🏼,neutral,test,singlish,english,SOFT,False,4,0,0.0
+5770,aniwaren,positive,train,singlish,english,SOFT,False,1,0,0.0
+5779,Uuuge acting 🫀,positive,train,singlish,english,SOFT,False,2,0,0.0
+5782,save dipnko,neutral,test,singlish,english,SOFT,False,2,0,0.0
+5789,Deiynh 💗,positive,val,singlish,english,SOFT,False,1,0,0.0
+5792,Deyyne🙂🤍,positive,test,singlish,english,SOFT,False,1,0,0.0
+5793,Deiynne,positive,train,singlish,english,SOFT,False,1,0,0.0
+5805,Deiyane,negative,train,singlish,english,SOFT,False,1,0,0.0
+5808,Utto ekhtanam adenav ahh,negative,train,singlish,english,SOFT,False,4,0,0.0
+5811,song nem,neutral,train,singlish,english,SOFT,False,2,0,0.0
+5819,hithata denunaaa,positive,train,singlish,english,SOFT,False,2,0,0.0
+5824,sir english medium science karanvd?,neutral,train,singlish,english,SOFT,False,5,0,0.0
+5839,Harima posh,positive,train,singlish,english,SOFT,False,2,0,0.0
+5842,athl 🥴🤧,positive,train,singlish,english,SOFT,False,1,0,0.0
+5848,Paththa️,positive,train,singlish,english,SOFT,False,1,0,0.0
+5849,chungiya,positive,train,singlish,english,SOFT,False,1,0,0.0
+5851,niymi.el,positive,train,singlish,english,SOFT,False,2,0,0.0
+5853,saranya ️,positive,train,singlish,english,SOFT,False,1,0,0.0
+5855,thundenawa hoday 🤭️,positive,train,singlish,english,SOFT,False,2,0,0.0
+5857,paththa cute angle,positive,val,singlish,english,SOFT,False,3,0,0.0
+5858,aniioyala thundenama hodaei ️️️,positive,train,singlish,english,SOFT,False,3,0,0.0
+5859,paththa,positive,train,singlish,english,SOFT,False,1,0,0.0
+5869,haks toffee wlath caffeine thiyei ned?,neutral,train,singlish,english,SOFT,False,6,0,0.0
+5887,Japanese macdonald walath coca cola patta rasai,positive,train,singlish,english,SOFT,False,7,1,0.143
+5894,laaasana song ekaa,positive,train,singlish,english,SOFT,False,3,0,0.0
+5902,Ade danagatta dawasaka e kellatat monawat hiteida marenda hitei yakoww,negative,test,singlish,english,SOFT,False,9,1,0.111
+5907,kwdwth bdinn hod nthi genu,negative,train,singlish,english,SOFT,False,5,0,0.0
+5926,Debitnm anula 🥲..,neutral,val,singlish,english,SOFT,False,2,0,0.0
+5928,Pla htti ynn,neutral,val,singlish,english,SOFT,False,3,0,0.0
+5935,admin kriy,positive,train,singlish,english,SOFT,False,2,0,0.0
+5937,aru.. viral,neutral,train,singlish,english,SOFT,False,2,0,0.0
+5944,Cri vd admin 😹,positive,train,singlish,english,SOFT,False,3,0,0.0
+5955,Htto aru pw,negative,test,singlish,english,SOFT,False,3,0,0.0
+5959,Cari admin 😓,negative,train,singlish,english,SOFT,False,2,0,0.0
+5963,nadu dapan 🙂,negative,train,singlish,english,SOFT,False,2,0,0.0
+5977,coffee evaravenava,neutral,train,singlish,english,SOFT,False,2,0,0.0
+5987,Hamawelema coffee bona man 😳😳,positive,train,singlish,english,SOFT,False,4,0,0.0
+6001,daily coffee bona man 😐,positive,train,singlish,english,SOFT,False,4,0,0.0
+6007,thnq sir,positive,train,singlish,english,SOFT,False,2,0,0.0
+6047,Script htto,negative,train,singlish,english,SOFT,False,2,0,0.0
+6048,Bangladesh keo nei mone hoy 🌚,neutral,train,singlish,english,SOFT,False,5,0,0.0
+6056,Oshadi nangi😥,negative,train,singlish,english,SOFT,False,2,0,0.0
+6074,race duwanawa,negative,train,singlish,english,SOFT,False,2,0,0.0
+6084,Dhen privatebus kaarayadha weradhi,negative,train,singlish,english,SOFT,False,4,0,0.0
+6111,Modayo,negative,val,singlish,english,SOFT,False,1,0,0.0
+6114,hod wde,positive,val,singlish,english,SOFT,False,2,0,0.0
+6127,modaaa kariyoooo,negative,train,singlish,english,SOFT,False,2,0,0.0
+6137,Attac,neutral,train,singlish,english,SOFT,False,1,0,0.0
+6139,Att🙂,negative,train,singlish,english,SOFT,False,1,0,0.0
+6149,Aadaiii ️,positive,train,singlish,english,SOFT,False,1,0,0.0
+6150,stutui.adambarai. bdusaranai 💖💖️️️💕💕,positive,train,singlish,english,SOFT,False,3,0,0.0
+6159,dawesa kathawe ✊,neutral,val,singlish,english,SOFT,False,2,0,0.0
+6161,Ekemma harim karhaw 🔥,positive,train,singlish,english,SOFT,False,3,0,0.0
+6170,Aniwaren aththakathaawa️,positive,train,singlish,english,SOFT,False,2,0,0.0
+6173,Aththenma Sir.,positive,train,singlish,english,SOFT,False,2,0,0.0
+6194,Redmi 😳,neutral,train,singlish,english,SOFT,False,1,0,0.0
+6227,try with dan wrap with oats brother,positive,val,singlish,english,SOFT,False,7,1,0.143
+6250,Save dipiya admin koto status dann one,neutral,train,singlish,english,SOFT,False,7,0,0.0
+6252,Athl hby,positive,train,singlish,english,SOFT,False,2,0,0.0
+6275,Ane issr scle yna kle mth ehmai,positive,train,singlish,english,SOFT,False,7,1,0.143
+6279,ththala aheama...🖤🖤,positive,train,singlish,english,SOFT,False,2,0,0.0
+6290,Cod puluwad 👉👈,neutral,train,singlish,english,SOFT,False,2,0,0.0
+6301,Aduna ayiye,negative,train,singlish,english,SOFT,False,2,0,0.0
+6330,Chanux bro duwana type reviews 🔥,positive,val,singlish,english,SOFT,False,5,0,0.0
+6336,Hunux bro tech review,positive,train,singlish,english,SOFT,False,4,0,0.0
+6350,kaha wenuwata kasthuri kaha hodaida 🤔,neutral,val,singlish,english,SOFT,False,5,0,0.0
+6382,kothu kadekt aws okom thiyannwa.oyala kohed,neutral,train,singlish,english,SOFT,False,7,1,0.143
+6386,Koko payment thiyanavada,neutral,train,singlish,english,SOFT,False,3,0,0.0
+6391,C50 kiyd bro,neutral,train,singlish,english,SOFT,False,2,0,0.0
+6394,Rice Lipa kiyda??,neutral,train,singlish,english,SOFT,False,3,0,0.0
+6400,Kiyda work pan Lipa. Hypeshire,neutral,train,singlish,english,SOFT,False,5,0,0.0
+6401,kohwda teyenne,neutral,val,singlish,english,SOFT,False,2,0,0.0
+6430,thihariyata ynna aththatma rasai,positive,test,singlish,english,SOFT,False,4,0,0.0
+6461,maka dominos,negative,test,singlish,english,SOFT,False,2,0,0.0
+6466,Weldone kelle 🤟,positive,val,singlish,english,SOFT,False,2,0,0.0
+6474,thankz akki,positive,train,singlish,english,SOFT,False,2,0,0.0
+6520,E genu lmya hrim lassni💗,positive,train,singlish,english,SOFT,False,4,0,0.0
+6524,Gampaha ned💕,neutral,train,singlish,english,SOFT,False,2,0,0.0
+6528,Gampahane,neutral,val,singlish,english,SOFT,False,1,0,0.0
+6530,Suger free ice cream ekeka hadanko diet friendly,neutral,train,singlish,english,SOFT,False,8,0,0.0
+6551,🗿 Waddo,negative,test,singlish,english,SOFT,False,1,0,0.0
+6567,Modaya,negative,train,singlish,english,SOFT,False,1,0,0.0
+6577,Addeh pattane 🖤,positive,train,singlish,english,SOFT,False,2,0,0.0
+6609,krima news,neutral,train,singlish,english,SOFT,False,2,0,0.0
+6617,"technopreners gana dnnwd entrepreneurs + education(engineers) ex= migra ayya magic bit ceo, moratuwe electronic engineering 1st class",positive,train,singlish,english,SOFT,False,17,1,0.059
+6631,idkin,neutral,train,singlish,english,SOFT,False,1,0,0.0
+6632,Kpmko Yhaniyen Knwnm,positive,train,singlish,english,SOFT,False,3,0,0.0
+6636,eiyaa whuyto,negative,train,singlish,english,SOFT,False,2,0,0.0
+6646,Donate kalda ❤️,neutral,val,singlish,english,SOFT,False,2,0,0.0
+6666,Track d pko,neutral,train,singlish,english,SOFT,False,2,0,0.0
+6729,Ahan innth asay,positive,train,singlish,english,SOFT,False,3,0,0.0
+6736,winasai,positive,train,singlish,english,SOFT,False,1,0,0.0
+6738,ammoooo,positive,train,singlish,english,SOFT,False,1,0,0.0
+6739,hthdeiyane,positive,train,singlish,english,SOFT,False,1,0,0.0
+6826,Me thirisan minihatanam henama gahanna one me aparadeta,negative,train,singlish,english,SOFT,False,8,1,0.125
+6848,Thilanka Ranepura Nithiya kriyathmaka wenathuru share karanna,neutral,val,singlish,english,SOFT,False,7,1,0.143
+6852,Hollt doch Polizei,negative,train,singlish,english,SOFT,False,3,0,0.0
+6864,Sakkiliyo!!😡😡,negative,train,singlish,english,SOFT,False,1,0,0.0
+6866,Pisso peekudu,negative,train,singlish,english,SOFT,False,2,0,0.0
+6871,Rilage last show,negative,train,singlish,english,SOFT,False,3,0,0.0
+6875,Amu gawayo,negative,train,singlish,english,SOFT,False,2,0,0.0
+6889,RILA siri noddokin sakkili,negative,train,singlish,english,SOFT,False,4,0,0.0
+6936,Diwyanjalee Perera haryma agei 💔,positive,train,singlish,english,SOFT,False,4,0,0.0
+6940,Sharada Paranamana sorry 💔 Pwni kwud kyl dngtte oygen,neutral,train,singlish,english,SOFT,False,8,1,0.125
+6967,Kaithan ultra pro max,negative,test,singlish,english,SOFT,False,4,0,0.0
+7001,Ayyooo,negative,val,singlish,english,SOFT,False,1,0,0.0
+7014,apiriyay,negative,train,singlish,english,SOFT,False,1,0,0.0
+7022,aiyoooo chamarayoooooooo...,negative,train,singlish,english,SOFT,False,2,0,0.0
+7027,ahahahhahahahhahahahhahahahhahahahhahahahhahahahh,positive,train,singlish,english,SOFT,False,1,0,0.0
+7060,Adareiiiiiiiiii,positive,train,singlish,english,SOFT,False,1,0,0.0
+7066,Pissudha meyalata??,negative,train,singlish,english,SOFT,False,2,0,0.0
+7101,Sakkily trining,negative,train,singlish,english,SOFT,False,2,0,0.0
+7129,Number danako email [ ](mailto: ),neutral,train,singlish,english,SOFT,False,4,0,0.0
+7131,Good morning ❤️Oyath gawada munath raththaran wage,positive,train,singlish,english,SOFT,False,7,1,0.143
+7139,Thanks nangi,positive,train,singlish,english,SOFT,False,2,0,0.0
+7153,Oyawageda,positive,train,singlish,english,SOFT,False,1,0,0.0
+7168,Oyat.siyabala.wagei❤️❤️❤️❤️,positive,train,singlish,english,SOFT,False,3,0,0.0
+7204,Piyumi Weerasinghe annekay 😑,neutral,train,singlish,english,SOFT,False,3,0,0.0
+7262,❤️oyat laesnaey,positive,train,singlish,english,SOFT,False,2,0,0.0
+7284,Weri kasiyo,negative,train,singlish,english,SOFT,False,2,0,0.0
+7294,Dutch Lanka Galle,neutral,train,singlish,english,SOFT,False,3,0,0.0
+7295,Cerry wesiyoo,negative,train,singlish,english,SOFT,False,2,0,0.0
+7296,Amour amour,neutral,test,singlish,english,SOFT,False,2,0,0.0
+7298,wesiyo,negative,train,singlish,english,SOFT,False,1,0,0.0
+7302,Cri wsiyo,negative,test,singlish,english,SOFT,False,2,0,0.0
+7304,weri kasi,negative,train,singlish,english,SOFT,False,2,0,0.0
+7306,niyamiiiiii,positive,val,singlish,english,SOFT,False,1,0,0.0
+7316,Cari wesiyo acting,negative,val,singlish,english,SOFT,False,3,0,0.0
+7337,Anivaa…✅✅,positive,train,singlish,english,SOFT,False,1,0,0.0
+7349,Negative marketing htto,negative,train,singlish,english,SOFT,False,3,0,0.0
+7359,niyamayi,positive,val,singlish,english,SOFT,False,1,0,0.0
+7366,Lara doni🔥,positive,test,singlish,english,SOFT,False,2,0,0.0
+7372,lara 🥺,positive,train,singlish,english,SOFT,False,1,0,0.0
+7403,"""🐰🐾 aneww..😩💋🌍",neutral,test,singlish,english,SOFT,False,1,0,0.0
+7433,Bike game ekkuth one,neutral,train,singlish,english,SOFT,False,4,0,0.0
+7435,pc games one,neutral,train,singlish,english,SOFT,False,3,0,0.0
+7447,car x street android download kerena hati oneeeee plzzz,neutral,train,singlish,english,SOFT,False,8,1,0.125
+7502,ado mcn MMA builder base local 1st,positive,test,singlish,english,SOFT,False,7,1,0.143
+7523,aniw,positive,train,singlish,english,SOFT,False,1,0,0.0
+7583,keri ponnayoo,negative,test,singlish,english,SOFT,False,2,0,0.0
+7594,kari ponnaya,negative,train,singlish,english,SOFT,False,2,0,0.0
+7634,Supere🥺🥺,positive,train,singlish,english,SOFT,False,1,0,0.0
+7656,noadakinna ponnaya,negative,test,singlish,english,SOFT,False,2,0,0.0
+7671,ubt bhh,negative,test,singlish,english,SOFT,False,2,0,0.0
+7720,wadakneee😏,negative,train,singlish,english,SOFT,False,1,0,0.0
+7734,Appage food review,positive,val,singlish,english,SOFT,False,3,0,0.0
+7759,amme utto,negative,train,singlish,english,SOFT,False,2,0,0.0
+7766,baninwane ithm,negative,train,singlish,english,SOFT,False,2,0,0.0
+7785,Sirwtm,positive,train,singlish,english,SOFT,False,1,0,0.0
+7849,Massoth wahanawa,neutral,train,singlish,english,SOFT,False,2,0,0.0
+7850,koidda,neutral,train,singlish,english,SOFT,False,1,0,0.0
+7874,gode balla,negative,train,singlish,english,SOFT,False,2,0,0.0
+7937,Dennm jambu 😓,neutral,train,singlish,english,SOFT,False,2,0,0.0
+7938,Hee Hee,positive,train,singlish,english,SOFT,False,2,0,0.0
+7950,Uff 😗,neutral,train,singlish,english,SOFT,False,1,0,0.0
+7952,hahaha,positive,train,singlish,english,SOFT,False,1,0,0.0
+7977,Bayyonwa yawanna one bus,negative,val,singlish,english,SOFT,False,4,0,0.0
+7997,Muslim ratawal,neutral,train,singlish,english,SOFT,False,2,0,0.0
+8005,Lankawath othanin thathamai nawathinne,negative,val,singlish,english,SOFT,False,4,0,0.0
+8006,Bangali mok mafi,negative,train,singlish,english,SOFT,False,3,0,0.0
+8007,Janadipathi konda panathiyenna one,neutral,test,singlish,english,SOFT,False,4,0,0.0
+8055,Stuhthi,positive,train,singlish,english,SOFT,False,1,0,0.0
+8106,Methane,neutral,test,singlish,english,SOFT,False,1,0,0.0
+8111,Maragana merana hadane,negative,train,singlish,english,SOFT,False,3,0,0.0
+8115,Go pko,negative,train,singlish,english,SOFT,False,2,0,0.0
+8146,apaa rataa hama kollaktam maa wagaa kalee sat wayan,positive,test,singlish,english,SOFT,False,9,1,0.111
+8153,Sira kathawe mekanam,positive,train,singlish,english,SOFT,False,3,0,0.0
+8158,Mekanm atthama kathawak,positive,train,singlish,english,SOFT,False,3,0,0.0
+8161,therunada oyta 😏🫠,neutral,test,singlish,english,SOFT,False,2,0,0.0
+8204,Muuva ellala maranda one,negative,test,singlish,english,SOFT,False,4,0,0.0
+8211,Epaaaaa,negative,val,singlish,english,SOFT,False,1,0,0.0
+8231,Bln yddi mun sinhalayt kelawana tm bln ine,negative,train,singlish,english,SOFT,False,8,1,0.125
+8262,Adoo 😓,negative,train,singlish,english,SOFT,False,1,0,0.0
+8301,Niyami ❤️❤️❤️,positive,val,singlish,english,SOFT,False,1,0,0.0
+8305,Perethayek,negative,test,singlish,english,SOFT,False,1,0,0.0
+8306,Neyama.buruwa,negative,train,singlish,english,SOFT,False,2,0,0.0
+8307,Nodaking matiya,negative,test,singlish,english,SOFT,False,2,0,0.0
+8382,Githel elluwahama alagithel denney mokadda deke wenasa,neutral,test,singlish,english,SOFT,False,7,1,0.143
+8439,Nokia - Casio,neutral,train,singlish,english,SOFT,False,2,0,0.0
+8500,Pirimiyek venuven unth gahaniyk me deval karanna narakai degollantm podui,neutral,train,singlish,english,SOFT,False,10,1,0.1
+8511,Akenma watina upadesak,positive,test,singlish,english,SOFT,False,3,0,0.0
+8530,Roshan Peramanna,neutral,val,singlish,english,SOFT,False,2,0,0.0
+8591,Aw Shashi,neutral,train,singlish,english,SOFT,False,2,0,0.0
+8684,Ekanm athta,positive,test,singlish,english,SOFT,False,2,0,0.0
+8694,Hmmmmmm,neutral,train,singlish,english,SOFT,False,1,0,0.0
+8700,Aththamai,positive,train,singlish,english,SOFT,False,1,0,0.0
+8734,Anii Aya gniynkooo kotiya kavii Pua diynee,negative,train,singlish,english,SOFT,False,7,1,0.143
+8801,Pinnckkk shurrrrtttah,neutral,train,singlish,english,SOFT,False,2,0,0.0
+8803,Numaya Bandara ingirisi 🙂,neutral,train,singlish,english,SOFT,False,3,0,0.0
+8805,coduru mataca,neutral,train,singlish,english,SOFT,False,2,0,0.0
+8928,Jiwithaya,positive,test,singlish,english,SOFT,False,1,0,0.0
+8933,Kibila kupadiya,negative,train,singlish,english,SOFT,False,2,0,0.0
+8938,Jivithaya,positive,train,singlish,english,SOFT,False,1,0,0.0
+8959,Jeevithaya,positive,train,singlish,english,SOFT,False,1,0,0.0
+8974,Harima vedagath denuvath kirimsk isthuthie,positive,test,singlish,english,SOFT,False,5,0,0.0
+8981,Ayi gaslabu(papol) samanya dalla kotala issmat spoon ekkgane udeta bonna dunnamath hodayilu,positive,train,singlish,english,SOFT,False,13,0,0.0
+9072,Thintha gannadan,neutral,test,singlish,english,SOFT,False,2,0,0.0
+9125,Nomiyana mathaka,positive,train,singlish,english,SOFT,False,2,0,0.0
+9205,Negombo patte ennedda,neutral,train,singlish,english,SOFT,False,3,0,0.0
+9389,"Lassanayi, ❤",neutral,train,singlish,english,SOFT,False,1,0,0.0
+9466,Sarasarwiyta...,neutral,test,singlish,english,SOFT,False,1,0,0.0
+9476,Orange colour food challenge ekak karannako nende,neutral,train,singlish,english,SOFT,False,7,1,0.143
+9486,Ice cream Ice coffee Sapu akkita ganna thibbo,neutral,train,singlish,english,SOFT,False,8,1,0.125
+9497,Yellow colour food challege ekak karannako plz❤,neutral,train,singlish,english,SOFT,False,7,1,0.143
+9506,Lassanayi akki ❤,neutral,train,singlish,english,SOFT,False,2,0,0.0
+10003,Pk thm...dnuth gym ekt ynne hdnne..😂😂,neutral,val,singlish,english,SOFT,False,7,1,0.143
+10007,Ehnm mtth ekd🙂🙂❤️🩹,neutral,train,singlish,english,SOFT,False,3,0,0.0
+10083,Rare genuine breed with a stronger back bone 💪🎉,positive,val,singlish,english,SOFT,False,7,0,0.0
+401,අනේ මේ මල්ලි උබෙ වීඩියෝ බැලුවම මට බය හිතෙනවා ඕවා ආයෙ දාන්න එපා යකෝ මං ඉවර වෙනකල්ම බැලුවෙ වීඩියෝ එකක් අවුරුදු ගාණකින් නැත්තම් puse දානවා ඔව දාන්න එපා හරිම භයානකයි,neutral,test,sinhala,code-mixed,SOFT,True,1,0,0.0
+1603,අනුර ට ඡන්ද දෙන්න රට ඉඳන් ආපු අපිට ආඩම්බරයක් ප්රසන්න ඇමැති තුමා සුපිරි වැඩකruwek,neutral,train,sinhala,code-mixed,SOFT,True,1,0,0.0
+1678,කතාව ක්රියාව නම වගේම ප්රසන්න ei හැබයි ඔය ගන්න තීන්දු ආපස්සට ගන්න එපා ජනතාව ඔබ සමගයි,neutral,train,sinhala,code-mixed,SOFT,True,1,1,1.0
+1679,චමර සම්පත්ල වගේ paකයල පාර්ලිමේන්තු එවපු ඡංද දායකයො වැලලියව් වලක් කපාගෙන මේ තරම් වටිනා මිනිස්සු මොන තරම් වැඩදායිද රටක ඉදිරි ගමන තීරණය කරන පාර්ලිමේන්තුවකට,neutral,val,sinhala,code-mixed,SOFT,True,1,0,0.0
+1684,කවුද අප්පා මේ මනුස්සයන්ව දේශපාලනය කරන්ඩ එව්වේඅපි අපේ රටට අවංකව වැඩ කරලා නෑ කියලා අපේ හිතට දැනෙනවා නේදමීට අවුරුදු කිහිපයකට පෙර අපි තේරුම් ගත්තා නම් නිවැරදි දේශපාලනය අද අපේ රට මීට වැඩිය ලොකු තැනක තියෙනවාඇත්තටම සතුටුයි දොස්තර මහත්තයාමොන ප්රශ්නාවත් අපි ඔයාලව තනිකරන්නෑ2029ට විතරක් නෙවේ තව අවුරුදු ගානක් යනකන් මට තේරෙන විදියට np ආණ්ඩුවක් නං පෙරලන්නන බැරිවෙයි,neutral,train,sinhala,code-mixed,SOFT,True,1,0,0.0
+2125,මම ගොඩක් කැමැති ඇය ගොඩක් හොඳට තමාගේ hama කටයුතු කැප වෙමින් කරනවා,positive,train,sinhala,code-mixed,SOFT,True,1,1,1.0
+2302,ජිවිතේ විදවන මිනිස්සු අපි හරි විහට ව්වාහය පිරිමි genu හොයාගෙන කසාද බෙදල ව්ද වනවා හෙමෝම නෙමෙයි අනේ මන්ද සුබ petum ඔයා දෙන්නට,positive,train,sinhala,code-mixed,SOFT,True,2,0,0.0
+5550,Me කොටස මාර විදිහට හිතට දැනුනා... ඇස් දෙකට කදුළු ආවා,positive,train,sinhala,code-mixed,SOFT,True,1,0,0.0
+5581,මේකත් දෙන් එපා වෙලා බලන්නත් beri අප්ප්රසනං මුණු ටික්කක් තියෙන්නේ,negative,test,sinhala,code-mixed,SOFT,True,1,1,1.0
+6907,ඇත්ත තව කල් ඉල්ලන්නෙ මෙලො වැඩක් කරන්නෙ නැතුව ඉදලා නෙමෙනෙ...දවස පුරාමත් පාඩම් කරලා රෑ එලි වෙනකනුත් වැඩ කරනවා..එහෙමත් කරලා time එකක් මදි හින්දනෙ තව කල් ඉල්ලන්නෙ..මෙකෙ ඉන්න සම hrak උන් හිතන් ඉන්නෙ මෙලො වැඩක් කරන්නෙ නැතුව පැය 24ම මෙකෙ වැලලෙනවා කියලා,negative,val,sinhala,code-mixed,SOFT,True,2,0,0.0
+6978,ඔයි වගේම හෑලි httiyek තමයි මේ ඉන්නෙ. උන්ට විරුද්දව මොකක් හරි කමෙන්ට් එකක් දැම්මොත් inbox ඇවිල්ලා වැලලෙනවා. සෙම්පයි කියලා නලලෙ කොටාගෙන ඉන්න උන් තමයි මේ.,negative,val,sinhala,code-mixed,SOFT,True,2,0,0.0
+7216,එක හරි අපිට එහෙම බැලුවද කියලත් අමතකයි. එ උනාට එක wifa දැක්කොත් මාස ගානක් මතකයි අපි බැලුව කියලා,neutral,val,sinhala,code-mixed,SOFT,True,1,0,0.0
+9040,⁣බලන්න යන අය පෝර්ට් සිටියේ වැටෙත් කුරුටු ගාලා නම් ලියලා..ඕවා පරෙස්සම් කරන්න අපේ රටේ මිනිස්සු වෙනම පුහුණු කරන්න ඕන..හැමතැනම කාරළා කෙළ ගහනවා..බුලත්කෙල ගහනවා..මුත්රා කරනවා..වැඩිපුරම බුලත් විට කන්නේ. driverly කොන්දලයි..,negative,train,sinhala,code-mixed,SOFT,True,1,0,0.0
